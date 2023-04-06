@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+Thumbs.db
+
+# [TODO] You can safely add to .gitignore: 
+.hugo_build.lock
+# [TODO] When Netlify builds your site, you can safely add to .gitignore: 
+# /public/
+# /resources/
+# [TODO] Found 1 file that should be committed in GIT:
+# layouts/shortcodes/blogdown/postref.html

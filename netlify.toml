@@ -19,7 +19,5 @@ HUGO_ENV = 'production'
 [[redirects]]
   from = "/cv"
   to = "/uploads/Daumler_CV.pdf"
-  status = 301
-  force = true # COMMENT: ensure that we always redirect
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+  status = 200
+  force = true

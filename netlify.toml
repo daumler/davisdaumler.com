@@ -15,3 +15,11 @@ command = 'hugo -F -b $DEPLOY_PRIME_URL'
 [context.production]
 [context.production.environment]
 HUGO_ENV = 'production'
+
+[[redirects]]
+  from = "/cv"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}

@@ -19,5 +19,5 @@ HUGO_ENV = 'production'
 [[redirects]]
   from = "/cv"
   to = "/uploads/Daumler_CV.pdf"
-  status = 200
+  status = 301
   force = true

@@ -18,8 +18,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: 'Personal website of Davis Daumler, sociologist and survey researcher.'
+    twitter: 'DavisDaumler'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -32,7 +32,7 @@ marketing:
 header:
   navbar:
     enable: true
-    align: r # original: l
+    align: r # original: l r
     show_logo: true
     show_language: false
     show_day_night: true

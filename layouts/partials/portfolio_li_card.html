@@ -20,7 +20,7 @@
 <div class="project-card project-item isotope-item {{ $js_tag_classes | safeHTMLAttr }}">
   <div class="card">
     {{ with $resource }}
-    {{ $image := .Resize "550x" }}
+    {{ $image := .Resize "270x270" }}
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
       <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="img-responsive" loading="lazy">
     </a>

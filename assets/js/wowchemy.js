@@ -8,8 +8,6 @@
 import mediumZoom from './_vendor/medium-zoom.esm';
 import {hugoEnvironment, searchEnabled, i18n} from '@params';
 import {scrollParentToChild} from './wowchemy-utils';
-import {fixScrollspy, scrollToAnchor} from './wowchemy-navigation';
-import {printLatestRelease} from './wowchemy-github';
 import {
   changeThemeModeClick,
   initThemeVariation,
@@ -19,11 +17,321 @@ import {
 
 console.debug(`Environment: ${hugoEnvironment}`);
 
+/* ---------------------------------------------------------------------------
+ * Responsive scrolling for URL hashes.
+ * --------------------------------------------------------------------------- */
+
+// Dynamically get responsive navigation bar height for offsetting Scrollspy.
+function getNavBarHeight() {
+  let $navbar = $('#navbar-main');
+  let navbar_offset = $navbar.outerHeight();
+  console.debug('Navbar height: ' + navbar_offset);
+  return navbar_offset;
+}
+
+/**
+ * Responsive hash scrolling.
+ * Check for a URL hash as an anchor.
+ * If page anchor matches hash, scroll to it responsively considering dynamic height elements.
+ * If `target` argument omitted (e.g. after event), assume it's the window's hash.
+ * Default to 0ms animation duration as don't want animation for fixing scrollspy Book page ToC highlighting.
+ */
+function scrollToAnchor(target, duration = 0) {
+  // If `target` is undefined or HashChangeEvent object, set it to window's hash.
+  // Decode the hash as browsers can encode non-ASCII characters (e.g. Chinese symbols).
+  target =
+    typeof target === 'undefined' || typeof target === 'object' ? decodeURIComponent(window.location.hash) : target;
+
+  // If target element exists, scroll to it taking into account fixed navigation bar offset.
+  if ($(target).length) {
+    // Escape special chars from IDs, such as colons found in Markdown footnote links.
+    target = '#' + $.escapeSelector(target.substring(1)); // Previously, `target = target.replace(/:/g, '\\:');`
+
+    let elementOffset = Math.ceil($(target).offset().top - getNavBarHeight()); // Round up to highlight right ID!
+    $('body').addClass('scrolling');
+    $('html, body').animate(
+      {
+        scrollTop: elementOffset,
+      },
+      duration,
+      function () {
+        $('body').removeClass('scrolling');
+      },
+    );
+  } else {
+    console.debug('Cannot scroll to target `#' + target + '`. ID not found!');
+  }
+}
+
+// Make Scrollspy responsive.
+function fixScrollspy() {
+  let $body = $('body');
+  let data = $body.data('bs.scrollspy');
+  if (data) {
+    data._config.offset = getNavBarHeight();
+    $body.data('bs.scrollspy', data);
+    $body.scrollspy('refresh');
+  }
+}
+
 function removeQueryParamsFromUrl() {
   if (window.history.replaceState) {
     let urlWithoutSearchParams =
       window.location.protocol + '//' + window.location.host + window.location.pathname + window.location.hash;
     window.history.replaceState({path: urlWithoutSearchParams}, '', urlWithoutSearchParams);
+  }
+}
+
+// Check for hash change event and fix responsive offset for hash links (e.g. Markdown footnotes).
+window.addEventListener('hashchange', scrollToAnchor);
+
+/* ---------------------------------------------------------------------------
+ * Add smooth scrolling to all links inside the main navbar.
+ * --------------------------------------------------------------------------- */
+
+$('#navbar-main li.nav-item a.nav-link, .js-scroll').on('click', function (event) {
+  // Store requested URL hash.
+  let hash = this.hash;
+
+  // If we are on a widget page and the navbar link is to a section on the same page.
+  if (this.pathname === window.location.pathname && hash && $(hash).length && $('.js-widget-page').length > 0) {
+    // Prevent default click behavior.
+    event.preventDefault();
+
+    // Use jQuery's animate() method for smooth page scrolling.
+    // The numerical parameter specifies the time (ms) taken to scroll to the specified hash.
+    let elementOffset = Math.ceil($(hash).offset().top - getNavBarHeight()); // Round up to highlight right ID!
+
+    // Uncomment to debug.
+    // let scrollTop = $(window).scrollTop();
+    // let scrollDelta = (elementOffset - scrollTop);
+    // console.debug('Scroll Delta: ' + scrollDelta);
+
+    $('html, body').animate(
+      {
+        scrollTop: elementOffset,
+      },
+      800,
+    );
+  }
+});
+
+/* ---------------------------------------------------------------------------
+ * Hide mobile collapsable menu on clicking a link.
+ * --------------------------------------------------------------------------- */
+
+$(document).on('click', '.navbar-collapse.show', function (e) {
+  //get the <a> element that was clicked, even if the <span> element that is inside the <a> element is e.target
+  let targetElement = $(e.target).is('a') ? $(e.target) : $(e.target).parent();
+
+  if (targetElement.is('a') && targetElement.attr('class') != 'dropdown-toggle') {
+    $(this).collapse('hide');
+  }
+});
+
+/* ---------------------------------------------------------------------------
+ * Filter publications.
+ * --------------------------------------------------------------------------- */
+
+// Active publication filters.
+let pubFilters = {};
+
+// Search term.
+let searchRegex;
+
+// Filter values (concatenated).
+let filterValues;
+
+// Publication container.
+let $grid_pubs = $('#container-publications');
+
+// Initialise Isotope publication layout if required.
+if ($grid_pubs.length) {
+  $grid_pubs.isotope({
+    itemSelector: '.isotope-item',
+    percentPosition: true,
+    masonry: {
+      // Use Bootstrap compatible grid layout.
+      columnWidth: '.grid-sizer',
+    },
+    filter: function () {
+      let $this = $(this);
+      let searchResults = searchRegex ? $this.text().match(searchRegex) : true;
+      let filterResults = filterValues ? $this.is(filterValues) : true;
+      return searchResults && filterResults;
+    },
+  });
+
+  // Filter by search term.
+  let $quickSearch = $('.filter-search').keyup(
+    debounce(function () {
+      searchRegex = new RegExp($quickSearch.val(), 'gi');
+      $grid_pubs.isotope();
+    }),
+  );
+
+  $('.pub-filters').on('change', function () {
+    let $this = $(this);
+
+    // Get group key.
+    let filterGroup = $this[0].getAttribute('data-filter-group');
+
+    // Set filter for group.
+    pubFilters[filterGroup] = this.value;
+
+    // Combine filters.
+    filterValues = concatValues(pubFilters);
+
+    // Activate filters.
+    $grid_pubs.isotope();
+
+    // If filtering by publication type, update the URL hash to enable direct linking to results.
+    if (filterGroup === 'pubtype') {
+      // Set hash URL to current filter.
+      let url = $(this).val();
+      if (url.substr(0, 9) === '.pubtype-') {
+        window.location.hash = url.substr(9);
+      } else {
+        window.location.hash = '';
+      }
+    }
+  });
+}
+
+// Debounce input to prevent spamming filter requests.
+function debounce(fn, threshold) {
+  let timeout;
+  threshold = threshold || 100;
+  return function debounced() {
+    clearTimeout(timeout);
+    let args = arguments;
+    let _this = this;
+
+    function delayed() {
+      fn.apply(_this, args);
+    }
+
+    timeout = setTimeout(delayed, threshold);
+  };
+}
+
+// Flatten object by concatenating values.
+function concatValues(obj) {
+  let value = '';
+  for (let prop in obj) {
+    value += obj[prop];
+  }
+  return value;
+}
+
+// Filter publications according to hash in URL.
+function filter_publications() {
+  // Check for Isotope publication layout.
+  if (!$grid_pubs.length) return;
+
+  let urlHash = window.location.hash.replace('#', '');
+  let filterValue = '*';
+
+  // Check if hash is numeric.
+  if (urlHash != '' && !isNaN(urlHash)) {
+    filterValue = '.pubtype-' + urlHash;
+  }
+
+  // Set filter.
+  let filterGroup = 'pubtype';
+  pubFilters[filterGroup] = filterValue;
+  filterValues = concatValues(pubFilters);
+
+  // Activate filters.
+  $grid_pubs.isotope();
+
+  // Set selected option.
+  $('.pubtype-select').val(filterValue);
+}
+
+/* ---------------------------------------------------------------------------
+ * Google Maps or OpenStreetMap via Leaflet.
+ * --------------------------------------------------------------------------- */
+
+function initMap() {
+  if ($('#map').length) {
+    let map_provider = $('#map-provider').val();
+    let lat = $('#map-lat').val();
+    let lng = $('#map-lng').val();
+    let zoom = parseInt($('#map-zoom').val());
+    let address = $('#map-dir').val();
+    let api_key = $('#map-api-key').val();
+
+    if (map_provider === 'google') {
+      let map = new GMaps({
+        div: '#map',
+        lat: lat,
+        lng: lng,
+        zoom: zoom,
+        zoomControl: true,
+        zoomControlOpt: {
+          style: 'SMALL',
+          position: 'TOP_LEFT',
+        },
+        streetViewControl: false,
+        mapTypeControl: false,
+        gestureHandling: 'cooperative',
+      });
+
+      map.addMarker({
+        lat: lat,
+        lng: lng,
+        click: function () {
+          let url = 'https://www.google.com/maps/place/' + encodeURIComponent(address) + '/@' + lat + ',' + lng + '/';
+          window.open(url, '_blank');
+        },
+        title: address,
+      });
+    } else {
+      let map = new L.map('map').setView([lat, lng], zoom);
+      if (map_provider === 'mapbox' && api_key.length) {
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+          attribution:
+            'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          tileSize: 512,
+          maxZoom: 18,
+          zoomOffset: -1,
+          id: 'mapbox/streets-v11',
+          accessToken: api_key,
+        }).addTo(map);
+      } else {
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        }).addTo(map);
+      }
+      let marker = L.marker([lat, lng]).addTo(map);
+      let url = lat + ',' + lng + '#map=' + zoom + '/' + lat + '/' + lng + '&layers=N';
+      marker.bindPopup(
+        address +
+          '<p><a href="https://www.openstreetmap.org/directions?engine=osrm_car&route=' +
+          url +
+          '">Routing via OpenStreetMap</a></p>',
+      );
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * GitHub API.
+ * --------------------------------------------------------------------------- */
+
+function printLatestRelease(selector, repo) {
+  if (hugoEnvironment === 'production') {
+    $.getJSON('https://api.github.com/repos/' + repo + '/tags')
+      .done(function (json) {
+        let release = json[0];
+        $(selector).append(' ' + release.name);
+      })
+      .fail(function (jqxhr, textStatus, error) {
+        let err = textStatus + ', ' + error;
+        console.log('Request Failed: ' + err);
+      });
   }
 }
 
@@ -232,6 +540,56 @@ $(window).on('load', function () {
       }
     }
   }
+  
+  // Enable publication filter for publication index page.
+  if ($('.pub-filters-select')) {
+    filter_publications();
+    // Useful for changing hash manually (e.g. in development):
+    // window.addEventListener('hashchange', filter_publications, false);
+  }
+
+  // Load citation modal on 'Cite' click.
+  $('.js-cite-modal').click(function (e) {
+    e.preventDefault();
+    let filename = $(this).attr('data-filename');
+    let modal = $('#modal');
+    modal.find('.modal-body code').load(filename, function (response, status, xhr) {
+      if (status == 'error') {
+        let msg = 'Error: ';
+        $('#modal-error').html(msg + xhr.status + ' ' + xhr.statusText);
+      } else {
+        $('.js-download-cite').attr('href', filename);
+      }
+    });
+    modal.modal('show');
+  });
+
+  // Copy citation text on 'Copy' click.
+  $('.js-copy-cite').click(function (e) {
+    e.preventDefault();
+    // Get selection.
+    let range = document.createRange();
+    let code_node = document.querySelector('#modal .modal-body');
+    range.selectNode(code_node);
+    window.getSelection().addRange(range);
+    try {
+      // Execute the copy command.
+      document.execCommand('copy');
+    } catch (e) {
+      console.log('Error: citation copy failed.');
+    }
+    // Remove selection.
+    window.getSelection().removeRange(range);
+  });
+
+  // Initialise Google Maps if necessary.
+  initMap();
+
+  // Print latest version of GitHub projects.
+  let githubReleaseSelector = '.js-github-release';
+  if ($(githubReleaseSelector).length > 0) {
+    printLatestRelease(githubReleaseSelector, $(githubReleaseSelector).data('repo'));
+  }
 
   // Parse Wowchemy keyboard shortcuts.
   document.addEventListener('keyup', (event) => {
@@ -349,4 +707,28 @@ document.querySelectorAll('pre > code').forEach((codeblock) => {
     // Parent when Hugo `highlight` class not applied to code block
     codeblock.parentNode.appendChild(copyBtn);
   }
+});
+
+// Normalize Bootstrap carousel slide heights for Slider widget instances.
+window.addEventListener('load', normalizeCarouselSlideHeights);
+window.addEventListener('resize', normalizeCarouselSlideHeights);
+window.addEventListener('orientationchange', normalizeCarouselSlideHeights);
+
+// Automatic main menu dropdowns on mouse over.
+$('body').on('mouseenter mouseleave', '.dropdown', function (e) {
+  var dropdown = $(e.target).closest('.dropdown');
+  var menu = $('.dropdown-menu', dropdown);
+  dropdown.addClass('show');
+  menu.addClass('show');
+  setTimeout(function () {
+    dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
+    menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
+  }, 300);
+});
+
+// Call `fixScrollspy` when window is resized.
+let resizeTimer;
+$(window).resize(function () {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(fixScrollspy, 200);
 });

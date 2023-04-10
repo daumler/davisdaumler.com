@@ -1,12 +1,13 @@
 /*************************************************
  *  Wowchemy
- *  https://github.com/wowchemy/wowchemy-hugo-themes
+ *  https://github.com/wowchemy/wowchemy-hugo-modules
  *
  *  Wowchemy Theming System
  *  Supported Modes: {0: Light, 1: Dark, 2: Auto}
  **************************************************/
 
 import {fadeIn} from './wowchemy-animation';
+import {fixMermaid} from './wowchemy-utils';
 
 const body = document.body;
 
@@ -191,7 +192,8 @@ function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
       console.debug('Initializing Mermaid with light theme');
       if (init) {
         /** @namespace window.mermaid **/
-        window.mermaid.initialize({startOnLoad: true, theme: 'default', securityLevel: 'loose'});
+        window.mermaid.initialize({startOnLoad: false, theme: 'default', securityLevel: 'loose'});
+        fixMermaid(true);
       } else {
         // Have to reload to re-initialise Mermaid with the new theme and re-parse the Mermaid code blocks.
         location.reload();
@@ -217,7 +219,8 @@ function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
       console.debug('Initializing Mermaid with dark theme');
       if (init) {
         /** @namespace window.mermaid **/
-        window.mermaid.initialize({startOnLoad: true, theme: 'dark', securityLevel: 'loose'});
+        window.mermaid.initialize({startOnLoad: false, theme: 'dark', securityLevel: 'loose'});
+        fixMermaid(true);
       } else {
         // Have to reload to re-initialise Mermaid with the new theme and re-parse the Mermaid code blocks.
         location.reload();

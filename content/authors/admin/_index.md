@@ -72,7 +72,7 @@ Hi, I'm **Davis**! I am a sociologist at the University of Michigan who studies 
 I am currently working on two broader projects. The first investigates how the timing of childhood poverty contributes to intergenerational inequalities. And the second explores the wealth accumulation process and society's larger shift in the reliance on household finances as a *de facto* safety net.
 {style="text-align: left; padding: 0.5em; margin-left: 4em; margin-right: 3em;"}
 
-Outside of work, I love laughing and walking. I enjoy consuming pop culture and spicy food. And I'm a big fan of opening 40 tabs of *New Yorker* articles, avoiding them for days, admitting defeat, and then closing ~38 tabs of *New Yorker* articles. 
+Outside of work, I love laughing and walking. I enjoy consuming pop culture and spicy food. And I'm a big fan of opening 40 tabs of *New Yorker* articles, avoiding them for days, and having to close ~38 tabs of *New Yorker* articles. 
 {style="text-align: left; padding: 0.5em; margin-left: 4em; margin-right: 3em;"}
 
 {{< cta-center cta_text="DOWNLOAD CV" cta_link="/CV" cta_new_tab="true" >}}

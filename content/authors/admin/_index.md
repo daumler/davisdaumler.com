@@ -66,7 +66,7 @@ social:
 superuser: true
 ---
 
-Hi, I'm **Davis**! I am a sociologist at the University of Michigan who studies wealth and social mobility. I conduct research that advances our understanding of how population-level inequalities are reinforced by family-level dynamics---unfolding across multiple generations of American families.
+Hi, I'm **Davis**! I am a sociologist at the University of Michigan who studies wealth and social mobility. My research advances our understanding of how population-level inequalities are reinforced by family-level dynamics---unfolding across multiple generations of American families.
 {style="text-align: left; padding: 0.5em; margin-top: 0.75em; margin-left: 4em; margin-right: 2.75em;"}
 
 I am currently working on two broader projects. The first investigates how the timing of childhood poverty contributes to intergenerational inequalities. And the second examines the wealth accumulation process and society's larger shift in the reliance on household finances as a *de facto* safety net.

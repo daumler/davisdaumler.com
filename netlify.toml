@@ -19,20 +19,20 @@ HUGO_ENV = 'production'
 [[redirects]]
   from = "/cv"
   to = "/uploads/Daumler_CV.pdf"
-  status = 200
+  status = 301
   force = true
 [[redirects]]
   from = "/CV"
   to = "/uploads/Daumler_CV.pdf"
-  status = 200
+  status = 301
   force = true
 [[redirects]]
   from = "/Cv"
   to = "/uploads/Daumler_CV.pdf"
-  status = 200
+  status = 301
   force = true
 [[redirects]]
   from = "/cV"
   to = "/uploads/Daumler_CV.pdf"
-  status = 200
+  status = 301
   force = true

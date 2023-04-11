@@ -84,6 +84,9 @@
               {{ $.Scratch.Set "target" " target=\"_blank\" rel=\"noopener\"" }}
             {{ end }}
           {{ end }}
+          {{ if (eq .URL "/CV") }}
+            {{ $.Scratch.Set "target" " target=\"_blank\"" }}
+          {{ end }}
 
           {{/* Get active page. */}}
 

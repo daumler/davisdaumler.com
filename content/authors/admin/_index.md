@@ -8,7 +8,7 @@ organizations:
 - name: University of Michigan
 #  url: 
 role: PhD Student in Sociology
-bio: My research interests include wealth and poverty.
+bio: My studies how inequalities persist across generations of families.
 education:
   courses:
   - course: PhD in Sociology
@@ -27,10 +27,10 @@ interests:
 - Stratification
 - Social Mobility
 - Economic Sociology
+- Wealth accumulation
+- Poverty dynamics
+- Family inequality
 social:
-#- icon: envelope
-#  icon_pack: fas
-#  link: /#contact
 - display:
     header: false # Display Twitter icon in the navigation bar?
   icon: twitter
@@ -46,12 +46,6 @@ social:
   icon_pack: fab
 #  label: Take a gander at my GitHub
   link: https://github.com/daumler
-#- icon: linkedin
-#  icon_pack: fab
-#  link: https://www.linkedin.com/
-#- icon: cv
-#  icon_pack: ai
-#  link: /cv
 - icon: orcid
   icon_pack: ai
 #  label: Make sure I'm legit with ORCID
@@ -72,7 +66,13 @@ social:
 superuser: true
 ---
 
-Davis Daumler is a PhD student in Sociology at the University of Michigan. His research interests include inequality, wealth accumulation, and family dynamics.
-{style="text-align: justified;"} 
+Hi, I'm **Davis**! I am a sociologist at the University of Michigan who studies wealth and social mobility. My research investigates how population-level inequalities are reinforced by family-level dynamics---unfolding across multiple generations of families.
+{style="text-align: left; padding: 0.5em; margin-top: 0.75em; margin-left: 4em; margin-right: 2.75em;"}
 
-{{< cta cta_text="DOWNLOAD CV" cta_link="/CV" cta_new_tab="true" >}}
+I am currently working on two broader projects. The first explores how the timing of childhood poverty contributes to intergenerational inequality. And the second examines the wealth accumulation process and society's larger shift in the reliance on household finances as a *de facto* safety net.
+{style="text-align: left; padding: 0.5em; margin-left: 4em; margin-right: 3em;"}
+
+Outside of work, I love laughing and walking. I enjoy consuming pop culture and spicy food. And I'm a big fan of opening 40 tabs of *New Yorker* articles, admitting defeat, and then closing 38 tabs of *New Yorker* articles. 
+{style="text-align: left; padding: 0.5em; margin-left: 4em; margin-right: 3em;"}
+
+{{< cta-center cta_text="DOWNLOAD CV" cta_link="/CV" cta_new_tab="true" >}}

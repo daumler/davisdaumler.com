@@ -5,9 +5,9 @@
     <link>https://davisdaumler.netlify.app/</link>
       <atom:link href="https://davisdaumler.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <description>Davis Daumler</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://davisdaumler.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://davisdaumler.netlify.app/media/icons/icon_hu780c48ff7056f7de09107d3917beaaec_191965_512x512_fill_lanczos_center_3.png</url>
       <title>Davis Daumler</title>
       <link>https://davisdaumler.netlify.app/</link>
     </image>
@@ -264,7 +264,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-513298674&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-378941265&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -274,7 +274,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-513298674&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-378941265&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

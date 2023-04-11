@@ -1,6 +1,13 @@
 ---
-date: "2022-10-24"
+date: "2023-04-10"
 sections:
+- block: about.avatar
+  content:
+    text: null
+    username: admin
+  id: about
+title: null
+type: landing  
 # - block: hero
 #   content:
 #     cta:
@@ -32,11 +39,11 @@ sections:
 #       gradient_end: '#1976d2'
 #       gradient_start: '#004ba0'
 #       text_color_light: true
-- block: about.avatar
-  content:
-    text: null
-    username: admin
-  id: about
+# - block: about.avatar
+#   content:
+#     text: null
+#     username: admin
+#   id: about
 # - block: features
 #   content:
 #     items:
@@ -64,7 +71,6 @@ sections:
 #       date_start: "2021-01-01"
 #       description: |2-
 #           Responsibilities include:
-# 
 #           * Analysing
 #           * Modelling
 #           * Deploying
@@ -244,6 +250,4 @@ sections:
 #   design:
 #     columns: "2"
 #   id: contact
-title: null
-type: landing
 ---

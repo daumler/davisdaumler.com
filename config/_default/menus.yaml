@@ -7,24 +7,24 @@ main:
   - name: Home
     url: 
     weight: 10
-  - name: Miscellaneous
-    url: post
-    weight: 80
+#  - name: Research # original: Publications
+#    url: publication
+#    weight: 50
+#  - name: Miscellaneous
+#    url: post
+#    weight: 80
+  - name: CV
+    url: CV
+    weight: 100
 #  - name: Projects
 #    url: '#projects'
 #    weight: 30
 #  - name: Talks
 #    url: '#talks'
 #    weight: 40
-  - name: Research # original: Publications
-    url: publication
-    weight: 50
 #  - name: Contact
 #    url: '#contact'
 #    weight: 60
-  - name: CV
-    url: CV
-    weight: 100
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.

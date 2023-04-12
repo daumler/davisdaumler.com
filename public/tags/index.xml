@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Davis Daumler</title>
-    <link>https://davisdaumler.netlify.app/tags/</link>
-      <atom:link href="https://davisdaumler.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://davisdaumler.com/tags/</link>
+      <atom:link href="https://davisdaumler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://davisdaumler.netlify.app/media/icons/icon_hu780c48ff7056f7de09107d3917beaaec_191965_512x512_fill_lanczos_center_3.png</url>
+      <url>https://davisdaumler.com/media/icons/icon_hu780c48ff7056f7de09107d3917beaaec_191965_512x512_fill_lanczos_center_3.png</url>
       <title>Tags</title>
-      <link>https://davisdaumler.netlify.app/tags/</link>
+      <link>https://davisdaumler.com/tags/</link>
     </image>
     
   </channel>

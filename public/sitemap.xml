@@ -2,143 +2,143 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://davisdaumler.netlify.app/talk/example-talk/</loc>
+    <loc>https://davisdaumler.com/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/event/</loc>
+    <loc>https://davisdaumler.com/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/</loc>
+    <loc>https://davisdaumler.com/</loc>
     <lastmod>2023-04-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tag/academic/</loc>
+    <loc>https://davisdaumler.com/tag/academic/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/categories/</loc>
+    <loc>https://davisdaumler.com/categories/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/category/demo/</loc>
+    <loc>https://davisdaumler.com/category/demo/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/post/</loc>
+    <loc>https://davisdaumler.com/post/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tags/</loc>
+    <loc>https://davisdaumler.com/tags/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/post/getting-started/</loc>
+    <loc>https://davisdaumler.com/post/getting-started/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tag/%E5%BC%80%E6%BA%90/</loc>
+    <loc>https://davisdaumler.com/tag/%E5%BC%80%E6%BA%90/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/category/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://davisdaumler.com/category/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/post/2020-12-01-r-rmarkdown/</loc>
+    <loc>https://davisdaumler.com/post/2020-12-01-r-rmarkdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tag/plot/</loc>
+    <loc>https://davisdaumler.com/tag/plot/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/category/r/</loc>
+    <loc>https://davisdaumler.com/category/r/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tag/r-markdown/</loc>
+    <loc>https://davisdaumler.com/tag/r-markdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tag/regression/</loc>
+    <loc>https://davisdaumler.com/tag/regression/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/post/writing-technical-content/</loc>
+    <loc>https://davisdaumler.com/post/writing-technical-content/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/publication-type/3/</loc>
+    <loc>https://davisdaumler.com/publication-type/3/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/publication/preprint/</loc>
+    <loc>https://davisdaumler.com/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/publication_types/</loc>
+    <loc>https://davisdaumler.com/publication_types/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/publication/</loc>
+    <loc>https://davisdaumler.com/publication/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tag/source-themes/</loc>
+    <loc>https://davisdaumler.com/tag/source-themes/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/post/jupyter/</loc>
+    <loc>https://davisdaumler.com/post/jupyter/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/slides/</loc>
+    <loc>https://davisdaumler.com/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/slides/example/</loc>
+    <loc>https://davisdaumler.com/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tag/deep-learning/</loc>
+    <loc>https://davisdaumler.com/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/tag/demo/</loc>
+    <loc>https://davisdaumler.com/tag/demo/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/project/example/</loc>
+    <loc>https://davisdaumler.com/project/example/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/project/external-project/</loc>
+    <loc>https://davisdaumler.com/project/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/project/</loc>
+    <loc>https://davisdaumler.com/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/publication-type/2/</loc>
+    <loc>https://davisdaumler.com/publication-type/2/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/publication/journal-article/</loc>
+    <loc>https://davisdaumler.com/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/publication-type/1/</loc>
+    <loc>https://davisdaumler.com/publication-type/1/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/publication/conference-paper/</loc>
+    <loc>https://davisdaumler.com/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://davisdaumler.netlify.app/admin/</loc>
+    <loc>https://davisdaumler.com/admin/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

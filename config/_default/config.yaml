@@ -69,6 +69,22 @@ related:
       weight: 100
     - name: categories
       weight: 70
+privacy:
+  googleAnalytics:
+    disable: true
+    respectDoNotTrack: true
+    anonymizeIP: true
+    useSessionStorage: true
+  disqus:
+    disable: true
+  instagram:
+    disable: true
+  twitter:
+    disable: true
+  vimeo:
+    disable: true
+  youtube:
+    disable: true
 security:
   _merge: deep
 sitemap:

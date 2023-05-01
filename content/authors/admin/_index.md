@@ -69,7 +69,7 @@ superuser: true
 **Hi, I'm Davis!** I am a sociologist who studies wealth and social mobility. I am completing my PhD at the <a href="https://lsa.umich.edu/soc" target="_blank" rel="noopener noreferrer">University of Michigan</a>, where I am an affiliate with the <a href="https://isr.umich.edu/" target="_blank" rel="noopener noreferrer">Institute for Social Research</a> and the <a href="https://www.inequalitydynamics.umich.edu/" target="_blank" rel="noopener noreferrer">Center for Inequality Dynamics</a>.
 {style="text-align: justify; margin-top: 0.75em; margin-left: 1.5em; margin-right: 1.5em;"}
 
-{{< hl >}}**My research advances our understanding of how social inequalities are affected by changing family dynamics---unfolding across multiple generations of American families.**{{< /hl >}}
+> **My research advances our understanding of how social inequalities are affected by changing family dynamics---unfolding across multiple generations of American families.**
 {style="text-align: justify; margin-left: 1.5em; margin-right: 1.5em;"}
 
 I am currently working on two broader projects. The first investigates how the timing of childhood poverty contributes to intergenerational inequalities. And the second explores the process by which families accumulate wealth and the larger shift in society's reliance on household finances as a de facto safety net.

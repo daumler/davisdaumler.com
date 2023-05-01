@@ -66,13 +66,13 @@ social:
 superuser: true
 ---
 
-Hi, I'm **Davis**! I am a sociologist at the University of Michigan who studies wealth and social mobility. My research advances our understanding of how population-level inequalities are reinforced by family-level dynamics---unfolding across multiple generations of American families.
+Hi, I'm **Davis**! I am a sociologist at the University of Michigan who studies wealth and social mobility. My research advances our understanding of how social inequalities are affected by changing family dynamics---unfolding across multiple generations of American families.
 {style="text-align: justify; margin-top: 0.75em; margin-left: 1.5em; margin-right: 1.5em;"}
 
-I am currently working on two broader projects. The first investigates how the timing of childhood poverty contributes to intergenerational inequalities. And the second explores the process by which families accumulate wealth and the larger shift in society's reliance on household finances as a *de facto* safety net.
+I am currently working on two broader projects. The first investigates how the timing of childhood poverty contributes to intergenerational inequalities. And the second explores the process by which families accumulate wealth and the larger shift in society's reliance on household finances as a de facto safety net.
 {style="text-align: justify; margin-left: 1.5em; margin-right: 1.5em;"}
 
-Outside of work, I love laughing and walking. I enjoy consuming pop culture and spicy food. And I'm a big fan of opening 40 tabs of *New Yorker* articles, avoiding them for days, and having to close ~38 tabs of *New Yorker* articles. 
+Outside of work, I love laughing and walking. I enjoy consuming pop culture and spicy food. And I'm a big fan of opening 40 tabs of *New Yorker* articles, reading one, avoiding the rest for days, and being forced to close them all in defeat. 
 {style="text-align: justify; margin-left: 1.5em; margin-right: 1.5em;"}
 
 {{< cta-center cta_text="DOWNLOAD CV" cta_link="/CV" cta_new_tab="true" >}}

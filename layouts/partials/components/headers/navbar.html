@@ -53,7 +53,7 @@
       {{end}}
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      {{ $align_menu := site.Params.header.navbar.align | default "l" }}
+      {{ $align_menu := site.Params.header.navbar.align | default "r" }}
       <div class="navbar-collapse main-menu-item collapse {{ if eq $align_menu "c" }}justify-content-center{{ else if eq $align_menu "r" }}justify-content-end{{else}}justify-content-start{{ end }}" id="navbar-content">
 
         <!-- Left Nav Bar -->

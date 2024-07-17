@@ -30,7 +30,7 @@
 }
 
 .navbar {
-  height: 65px; // Used to be 70
+  height: 60px; // Old: used to be 70px (original), then 65px
   background: $sta-menu-primary;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
   font-size: #{$sta-font-size-small}px;

@@ -64,7 +64,7 @@
   font-size: 2.25em;
   font-weight: 250;
   color: #000;
-  margin: 20px 0 10px;
+  margin: 20px 0 50px; // old: margin: 20px 0 10px;
 }
 
 @include media-breakpoint-down(md) {
@@ -148,7 +148,6 @@ ul.ul-edu li .description p.course {
 ul.ul-edu li .description p.institution {
   font-size: 0.75rem;
   color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 50px;
 }
 
 // For about.avatar widget

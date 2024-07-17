@@ -4,7 +4,7 @@
 
 #profile {
   text-align: center;
-  padding: -10px 5px 10px;
+  padding: -10px 5px -10px; // old: padding: -10px 5px 10px;
   position: relative;
 }
 
@@ -64,7 +64,7 @@
   font-size: 2.25em;
   font-weight: 250;
   color: #000;
-  margin: 20px 0 10px; // old: margin: 20px 0 10px;
+  margin: 0px 0 10px; // old: margin: 20px 0 10px;
 }
 
 @include media-breakpoint-down(md) {
@@ -85,7 +85,7 @@
 }
 
 .portrait-title h3:last-of-type { // old: entire item did not exist
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 }
 
 @include media-breakpoint-down(md) {
@@ -98,7 +98,7 @@
   }
   
   .portrait-title h3:last-of-type { // old: entire item did not exist
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   }
 }
 

@@ -85,7 +85,7 @@
 }
 
 .portrait-title h3:last-of-type { // old: entire item did not exist
-  margin-bottom: 10px;
+  padding-bottom: 24px;
 }
 
 @include media-breakpoint-down(md) {
@@ -98,7 +98,7 @@
   }
   
   .portrait-title h3:last-of-type { // old: entire item did not exist
-  margin-bottom: 5px;
+  padding-bottom: 12px;
   }
 }
 

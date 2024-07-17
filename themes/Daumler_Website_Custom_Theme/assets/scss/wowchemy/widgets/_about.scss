@@ -65,6 +65,7 @@
   font-weight: 250;
   color: #000;
   margin: 20px 0 10px; // old: margin: 20px 0 10px;
+  padding-bottom: 50px; // old: did not exist
 }
 
 @include media-breakpoint-down(md) {
@@ -215,7 +216,7 @@ ul.ul-edu li .description p.institution {
   }
 
   .bio-text {
-     padding-top: 50px; // old: did not exist
+     // padding-top: 50px; // old: did not exist
      max-width: 680px; // old: 680px
   }
 }

@@ -85,7 +85,7 @@
 }
 
 .portrait-title h3:last-of-type { // old: entire item did not exist
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 @include media-breakpoint-down(md) {
@@ -95,6 +95,10 @@
     color: rgba(0, 0, 0, 0.54);
     margin: 0 0 10px;
     Text-align: center;
+  }
+  
+  .portrait-title h3:last-of-type { // old: entire item did not exist
+  margin-bottom: 5px;
   }
 }
 

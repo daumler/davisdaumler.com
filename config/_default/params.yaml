@@ -22,7 +22,7 @@ design:
     # text_color_light: true
   spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-    padding: ["20px", "0", "20px", "0"]
+    padding: ["20px", "0", "0px", "0"] # old: ["20px", "0", "20px", "0"]
   css_style: ''
   css_class: ''
 
@@ -61,14 +61,14 @@ header:
       url: '/CV/'
 
 # Site footer
-footer:
-  copyright:
-    notice: '© 2024 Davis Daumler. This work is licensed under {license}'
-    license:
-      enable: false
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+#footer:
+#  copyright:
+#    notice: '© 2024 Davis Daumler. This work is licensed under {license}'
+#    license:
+#      enable: false
+#      allow_derivatives: false
+#      share_alike: true
+#      allow_commercial: false
 
 # Localization
 locale:

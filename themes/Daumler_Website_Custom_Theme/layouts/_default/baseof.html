@@ -60,6 +60,7 @@
     {{ block "main" . }}{{ end }}
   </div>
 
+<!--- Start commenting out ---
   <div class="page-footer">
     {{/* Docs and Updates layouts include the site footer in a different location. */}}
     {{ if not (in (slice "book" "docs" "updates") .Type) }}
@@ -70,6 +71,7 @@
   </div>
 
   {{ partial "site_js" . }}
+---Finish commenting out --->
 
 </body>
 </html>

@@ -9,11 +9,11 @@ html {
   line-height: 1.65;
 
   // Offset anchor scrolling by height of desktop fixed header.
-  // scroll-padding-top: 65px; // Used to be 70px
+  scroll-padding-top: 65px; // old: scroll-padding-top: 70px; [then] 65px
 
   @include media-breakpoint-down(md) {
     // Offset anchor scrolling by height of mobile fixed header.
-    // scroll-padding-top: 50px;
+    scroll-padding-top: 50px; // old: used to be: scroll-padding-top: 50px;
   }
 }
 @media screen and (min-width: 58em) {

@@ -1,20 +1,24 @@
 [build]
-command = 'hugo'
-publish = 'public'
+  command = "hugo --gc --minify -b $URL"
+  publish = "public"
 
 [build.environment]
-HUGO_VERSION = '0.111.3'
+  HUGO_VERSION = "0.119.0"
+  HUGO_ENABLEGITINFO = "true"
 
-[context]
-[context.branch-deploy]
-command = 'hugo -F -b $DEPLOY_PRIME_URL'
+[context.production.environment]
+  HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = 'hugo -F -b $DEPLOY_PRIME_URL'
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
-[context.production]
-[context.production.environment]
-HUGO_ENV = 'production'
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
+  [plugins.inputs]
+    debug = true
 
 [[redirects]]
   from = "/cv"
@@ -33,6 +37,111 @@ HUGO_ENV = 'production'
   force = true
 [[redirects]]
   from = "/cV"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/Daumler_cv"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Daumler_CV"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Daumler_Cv"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Daumler_cV"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cv.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/CV.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Cv.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/cV.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/Daumler_cv.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Daumler_CV.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Daumler_Cv.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/Daumler_cV.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daumler_cv"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/daumler_CV"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/daumler_Cv"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/daumler_cV"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daumler_cv.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/daumler_CV.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/daumler_Cv.pdf"
+  to = "/uploads/Daumler_CV.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/daumler_cV.pdf"
   to = "/uploads/Daumler_CV.pdf"
   status = 301
   force = true

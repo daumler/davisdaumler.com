@@ -1,0 +1,29 @@
+name = "Davis Daumler"
+license = "MIT"
+licenselink = "https://github.com/HugoBlox/theme-academic-cv/blob/main/LICENSE.md"
+description = "The personal and professional website of Davis Daumler."
+homepage = "https://incomparable-halva-85ed56.netlify.app"
+demosite = ""
+tags = ["academic",
+        "sociology"
+       ]
+features = ["cv",
+            "biographical sketch",
+            "research",
+            "teaching",
+            "publications",
+            "data",
+            "resources",
+            "about me"
+           ]
+
+[author]
+  name = "Davis Daumler"
+  homepage = "https://incomparable-halva-85ed56.netlify.app"
+
+# If porting an existing theme
+[original]
+  name = "Hugo Blox Academic CV"
+  author = "George Cushen"
+  homepage = "https://hugoblox.com/templates/details/academic-cv/"
+  repo = "https://github.com/HugoBlox/theme-academic-cv"

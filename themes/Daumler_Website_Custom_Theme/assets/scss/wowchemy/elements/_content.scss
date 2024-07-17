@@ -158,7 +158,7 @@
 
 /* For article page only, not lists. */
 article .article-metadata {
-  margin-bottom: 20px;
+  margin-bottom: 0px; // old: margin-bottom: 20px;
 }
 
 .dark .article-metadata {

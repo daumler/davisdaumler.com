@@ -5,23 +5,38 @@
 
 main:
   - name: Home
-    url: 
-    weight: 10
-#  - name: Research # original: Publications
-#    url: publication
-#    weight: 50
-#  - name: Miscellaneous
-#    url: post
-#    weight: 80
-  - name: CV
-    url: CV
+    url: '/'
     weight: 100
-#  - name: Projects
-#    url: '#projects'
-#    weight: 30
-#  - name: Talks
-#    url: '#talks'
-#    weight: 40
-#  - name: Contact
-#    url: '#contact'
-#    weight: 60
+  - name: CV
+    url: 'https://incomparable-halva-85ed56.netlify.app/Daumler_CV'
+    weight: 200
+#  - name: Research
+#    url: '/project/'
+#    weight: 310
+  - name: Publications
+    url: '/publications/'
+    weight: 320
+#  - name: Teaching
+#    url: '/event/'
+#    weight: 330
+#  - name: Resources
+#  - identifier: resources
+#    url: '/talks/'
+#    weight: 400
+#  - name: Hobbies
+#    parent: Resources
+#    url: '/talks/slides/'
+#    weight: 410
+  - name: PSID-SHELF
+#    parent: Resources
+    url: 'https://www.openicpsr.org/openicpsr/project/194322'
+    weight: 420
+#  - name: About Me
+#    url: '/post/'
+#    weight: 800
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+#  - name: CV
+#    url: uploads/resume.pdf
+#    weight: 70

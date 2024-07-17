@@ -75,9 +75,18 @@ body.no-navbar {
   min-height: 100vh;
 }
 
-.page-header,
-.page-footer {
+// Old:
+// .page-header,
+// .page-footer {
+//   flex-shrink: 0;
+// }
+
+.page-header {
   flex-shrink: 0;
+}
+
+.page-footer {
+  flex-shrink: 2;
 }
 
 .page-body {
@@ -106,7 +115,7 @@ p {
 }
 
 p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0; // old: margin-bottom: 0;
 }
 
 /* Lists */

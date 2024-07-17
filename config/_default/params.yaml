@@ -47,7 +47,7 @@ marketing:
 header:
   navbar:
     enable: true
-    fixed_to_top: true # used to be: false
+    fixed_to_top: false # used to be: false
     align: r
     show_logo: true
     show_language: false

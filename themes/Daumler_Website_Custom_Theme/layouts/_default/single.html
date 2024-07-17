@@ -1,0 +1,20 @@
+{{- define "main" -}}
+
+<article class="article">
+
+  {{ partial "page_header" . }}
+
+  <div class="article-container">
+
+    <div class="article-style">
+      {{ .Content }}
+    </div>
+
+<!--- Start commenting out ---
+    {{ partial "page_footer" . }}
+--- Finish commenting out --->
+
+  </div>
+</article>
+
+{{- end -}}

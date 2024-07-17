@@ -60,19 +60,19 @@ body.no-navbar {
 
 .page-wrapper {
   // Min height = viewport height - navbar height
-  min-height: calc(100vh - 65px); // Used to be: calc(100vh - 70px), -165px)
+  min-height: calc(90vh - 65px); // Used to be: calc(100vh - 70px), -165px)
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
 }
 @include media-breakpoint-down(md) {
   .page-wrapper {
-    min-height: calc(100vh - 50px); // Used to be (eventually): calc(100vh - 150px)
+    min-height: calc(90vh - 50px); // Used to be (eventually): calc(100vh - 150px)
   }
 }
 
 .page-wrapper.no-navbar {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 // Old:

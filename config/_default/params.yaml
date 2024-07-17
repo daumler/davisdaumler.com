@@ -58,7 +58,7 @@ header:
     button:
       enable: true
       text: "Download CV"
-      url: "https://incomparable-halva-85ed56.netlify.app/CV"
+      url: '/CV/'
 
 # Site footer
 footer:
@@ -86,7 +86,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/davisdaumler/Website_Test'
+    url: 'https://github.com/daumler/davisdaumler/'
     content_dir: content
     branch: main
   avatar:

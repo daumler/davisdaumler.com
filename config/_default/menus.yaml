@@ -8,14 +8,14 @@ main:
     url: '/'
     weight: 100
   - name: CV
-    url: 'https://incomparable-halva-85ed56.netlify.app/Daumler_CV'
+    url: '/CV/'
     weight: 200
 #  - name: Research
 #    url: '/project/'
 #    weight: 310
-  - name: Publications
-    url: '/publications/'
-    weight: 320
+#  - name: Publications
+#    url: '/publications/'
+#    weight: 320
 #  - name: Teaching
 #    url: '/event/'
 #    weight: 330

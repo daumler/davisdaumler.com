@@ -82,7 +82,10 @@
   font-weight: 300;
   color: rgba(0, 0, 0, 0.54);
   margin: 0 0 10px; // old [was too squished, affects both title/inst]: margin: 0 0 10px;
-  padding-bottom: 50px; // old: did not exist
+}
+
+.portrait-title h3:last-of-type { // old: entire item did not exist
+  margin-bottom: 50px;
 }
 
 @include media-breakpoint-down(md) {

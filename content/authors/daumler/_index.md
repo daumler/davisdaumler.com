@@ -35,7 +35,7 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/DavisDaumler
-    label: Follow me on "X"
+    label: 
     display:
       header: true
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack

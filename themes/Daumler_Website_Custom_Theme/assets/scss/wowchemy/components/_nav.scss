@@ -27,6 +27,8 @@
   background-color: $sta-menu-primary !important;
   color: $sta-menu-text !important;
   z-index: 1032; // I18n dropdown over mobile expanded menu.
+  // position: absolute;
+  top: 20px;
 }
 
 .navbar {
@@ -275,7 +277,7 @@ ul.nav-icons li.nav-item a.nav-link {
   color: $sta-dark-menu-text !important;
   z-index: 1032 !important; // Appear just over navbar.
   // position: absolute;
-  // top: 60px;
+  top: 20px;
 }
 
 .dropdown-item {

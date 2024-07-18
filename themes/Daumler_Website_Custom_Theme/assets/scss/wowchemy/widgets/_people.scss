@@ -21,12 +21,12 @@
   height: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 540px) {
   .people-widget .col-sm-auto {
     width: 30%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   .people-widget .col-sm-auto {
     width: 20%;
   }

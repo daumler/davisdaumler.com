@@ -13,7 +13,7 @@ html {
 
   @include media-breakpoint-down(md) {
     // Offset anchor scrolling by height of mobile fixed header.
-    scroll-padding-top: 50px; // old: used to be: scroll-padding-top: 50px;
+    scroll-padding-top: 60px; // old: used to be: scroll-padding-top: 50px;
   }
 }
 @media screen and (min-width: 58em) {

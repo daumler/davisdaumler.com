@@ -35,25 +35,25 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/DavisDaumler
-    label: '' 
+    label: Follow me on "X"
     display:
       header: true
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com/citations?user=lTp9f0kAAAAJ
-    label: 'Check out my Google Scholar'
+    label: Check out my Google Scholar
   - icon: github
     icon_pack: fab
     link: https://github.com/daumler/
-    label: 'Take a gander at my GitHub'
+    label: Take a gander at my GitHub
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0001-7942-9587
-    label: 'Make sure I'm legit with ORCID'
+    label: Make sure I'm legit with ORCID
   - icon: university
     icon_pack: fa
     link: https://lsa.umich.edu/soc/people/current-graduate-students/davis-daumler.html
-    label: "Go visit my institutional profile"
+    label: Go visit my institutional profile
 
 # Follow me on Twitter
 

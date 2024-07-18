@@ -270,7 +270,8 @@ ul.nav-icons li.nav-item a.nav-link {
 }
 
 .dark .dropdown-menu {
-  background-color: $sta-dark-menu-primary !important;
+  background-color: $sta-dark-menu-text-active !important;
+  // background-color: $sta-dark-menu-primary !important;
   color: $sta-dark-menu-text !important;
 }
 

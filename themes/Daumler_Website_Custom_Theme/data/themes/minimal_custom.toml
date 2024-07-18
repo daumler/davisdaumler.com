@@ -28,6 +28,7 @@ name = "minimal_custom" # Old: Minimal
   
   # Home sections
   home_section_odd = "#282a36" # Old: Did not exist as option
+  home_section_even = "#282a36" # Old: Did not exist as option
   
   # Menu
   menu_text_active = "#bbdefb" # Old: Did not exist as option

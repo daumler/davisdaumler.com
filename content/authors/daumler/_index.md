@@ -50,7 +50,7 @@ social:
     icon_pack: ai
     link: https://orcid.org/0000-0001-7942-9587
     label: 'Make sure I'm legit with ORCID'
-  - icon: institution
+  - icon: university
     icon_pack: fa
     link: https://lsa.umich.edu/soc/people/current-graduate-students/davis-daumler.html
     label: "Go visit my institutional profile"

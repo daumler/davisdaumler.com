@@ -37,14 +37,14 @@
     33.3% - 13.3px
   ); /* Fluid 3 columns ($gutter * ($number_of_cols - 1) / $number_of_cols; following https://stackoverflow.com/a/51290967) */
 }
-@media screen and (max-width: 1139px) { // old: 1199px
+@media screen and (max-width: 1199px) { // originally 1199px, then 1139px
   .project-card {
     width: calc(
       50% - 10px
     ); /* Fluid 2 columns ($gutter * ($number_of_cols - 1) / $number_of_cols; following https://stackoverflow.com/a/51290967) */
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) { // originally 768px, then 720px
   .project-card {
     width: 100%; /* 1 column */
   }

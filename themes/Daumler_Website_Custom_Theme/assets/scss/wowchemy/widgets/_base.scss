@@ -137,7 +137,7 @@
   background: $sta-dark-home-section-even; // old: background: $sta-dark-home-section-even;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) { // originally 768px, then 720px
   .home-section {
     padding: 0px 0; // old: padding: 60px 0;
   }

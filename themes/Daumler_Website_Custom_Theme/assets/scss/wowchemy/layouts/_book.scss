@@ -79,7 +79,7 @@
   }
 }
 
-@media (min-width: 1140px) { // old: 1200px
+@media (min-width: 1200px) { // old: 1200px, then 1140px
   .docs-sidebar {
     border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -98,7 +98,7 @@
   }
 }
 
-@media (min-width: 1140px) { // old: 1200px
+@media (min-width: 1200px) { // old: 1200px, then 1140px
   .docs-sidebar {
     flex: 0 1 320px;
   }

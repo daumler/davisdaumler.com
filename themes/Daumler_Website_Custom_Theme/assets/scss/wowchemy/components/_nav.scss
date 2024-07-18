@@ -232,12 +232,12 @@
     left: 0;
     top: 50px;
     width: 100%;
-    background-color: $sta-menu-primary;
+    background-color: $sta-dark-menu-text-active !important; // old: background-color: $sta-menu-primary;
     text-align: center !important;
   }
 
   .dark .navbar-collapse {
-    background-color: $sta-dark-menu-primary;
+    background-color: $sta-dark-menu-text-active !important; // old: background-color: $sta-dark-menu-primary;
   }
 
   #navbar-main .main-menu-item .nav-item {
@@ -270,16 +270,17 @@ ul.nav-icons li.nav-item a.nav-link {
 }
 
 .dark .dropdown-menu {
-  background-color: $sta-dark-menu-primary !important;
+  background-color: $sta-dark-menu-primary !important; // old: $sta-dark-menu-primary
+  // this controls the upper and lower edges
   color: $sta-dark-menu-text !important;
 }
 
 .dropdown-item {
-  background-color: $sta-dark-menu-text-active !important; // old: $sta-menu-primary
+  background-color: $sta-menu-primary !important; // old: $sta-menu-primary
   color: $sta-menu-text !important;
 }
 
 .dark .dropdown-item {
-  background-color: $sta-dark-menu-text-active !important; // old: $sta-dark-menu-primary
+  background-color: $sta-dark-menu-primary !important; // old: $sta-dark-menu-primary
   color: $sta-dark-menu-text !important;
 }

@@ -231,8 +231,8 @@
     position: absolute;
     left: 0;
     top: 60px;
-    width: 25%;
-    background-color: rgba($sta-menu-text, 0.10);
+    width: 33.3%;
+    background-color: rgba($sta-menu-text, 0.15);
     // background-color: rgba($sta-dark-menu-text-active, 0.50);
     color: $sta-dark-menu-text;
     text-align: center !important;
@@ -244,11 +244,13 @@
   }
 
   #navbar-main .main-menu-item .nav-item {
-    padding: 10px 15px !important;
+    // padding: 10px 15px !important;
+    padding: 5px 10px !important;
   }
 
   #navbar-main .main-menu-item .nav-item .nav-link {
-    padding: 5px 15px !important;
+    // padding: 5px 15px !important;
+    padding: 5px 10px !important;
   }
 }
 

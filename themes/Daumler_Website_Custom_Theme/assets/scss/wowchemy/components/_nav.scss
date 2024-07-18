@@ -236,7 +236,7 @@
     // background-color: rgba($sta-dark-menu-text-active, 0.50);
     // color: $sta-dark-menu-text;
     text-align: center !important;
-    margin: 0px 5.5px 0px 0px
+    margin: 0px 0px 0px 5.5px
   }
 
   .dark .navbar-collapse {
@@ -263,11 +263,11 @@
   }
   
   #navbar-main .main-menu-item .nav-item:last-of-type {
-    padding: 6px 2.5px 12px !important;
+    padding: 6px 2.5px 10px !important;
   }
   
   #navbar-main .main-menu-item .nav-item .nav-link:last-of-type {
-    padding: 4px 2.5px 12px !important;
+    padding: 4px 2.5px 10px !important;
   }
 }
 

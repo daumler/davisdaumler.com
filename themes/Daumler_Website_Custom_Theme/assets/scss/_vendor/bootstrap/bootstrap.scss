@@ -42,14 +42,8 @@
 @import "spinners";
 @import "utilities";
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "font-size": map-merge(
-      map-get($utilities, "font-size"),
-    (responsive: true),
-    ),
-  )
-);
+"font-size": map-merge(map-get($utilities, "font-size"),
+(responsive: true),
+),
 
 @import "print";

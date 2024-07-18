@@ -134,7 +134,7 @@
 }
 
 .dark .home-section:nth-of-type(even) {
-  background: $sta-dark-home-section-even; old: background: $sta-dark-home-section-even;
+  background: $sta-dark-home-section-even; // old: background: $sta-dark-home-section-even;
 }
 
 @media screen and (max-width: 768px) {

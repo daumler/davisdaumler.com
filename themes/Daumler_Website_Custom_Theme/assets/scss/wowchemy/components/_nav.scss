@@ -231,7 +231,7 @@
     position: absolute;
     left: 0;
     top: 60px;
-    width: 35%;
+    width: 33%;
     background-color: rgba(#F6F6F6, 0.98);
     // background-color: rgba($sta-dark-menu-text-active, 0.50);
     // color: $sta-dark-menu-text;
@@ -273,7 +273,7 @@
 
 @include media-breakpoint-down(xs) {
   .navbar-collapse {
-    width: 40%;
+    width: 38%;
   }
 }
 

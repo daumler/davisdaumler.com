@@ -232,14 +232,15 @@
     left: 0;
     top: 60px;
     width: 35%;
-    background-color: rgba(#eee, 0.80);
+    background-color: rgba(#ddd, 0.90);
     // background-color: rgba($sta-dark-menu-text-active, 0.50);
     // color: $sta-dark-menu-text;
     text-align: center !important;
+    margin: 50px
   }
 
   .dark .navbar-collapse {
-    background-color: rgba($sta-menu-text, 0.80);
+    background-color: rgba($sta-menu-text, 0.90);
     // color: $sta-dark-menu-text;
   }
   

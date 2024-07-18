@@ -67,7 +67,7 @@ body.no-navbar {
 }
 @include media-breakpoint-down(md) {
   .page-wrapper {
-    min-height: calc(100vh - 50px); // Used to be (eventually): calc(100vh - 150px)
+    min-height: calc(100vh - 60px); // Used to be (eventually): calc(100vh - 150px)
   }
 }
 

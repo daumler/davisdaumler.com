@@ -40,6 +40,7 @@ marketing:
     google_tag_manager: ''
     microsoft_clarity: ''
     plausible: 'davisdaumler.com' # Domain name, if using Plausible Website Analytics
+    goatcounter: 'dd5' # Host name, if using Goat Counter Website Analytics
   verification:
     google: ''
     baidu: ''

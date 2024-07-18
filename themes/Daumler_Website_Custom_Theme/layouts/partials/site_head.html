@@ -40,7 +40,13 @@
   {{ if site.Params.marketing.analytics.plausible }}
     <script defer data-domain="{{ site.Params.marketing.analytics.plausible }}" src="https://plausible.io/js/script.js"></script>
   {{- end -}}
-
+  
+  <!--- ADDING THE OPTION FOR "GOAT COUNTER" WEBSITE ANALYTICS --->
+  {{ if site.Params.marketing.analytics.goatcounter }}
+  <script data-goatcounter="https://{{ site.Params.marketing.analytics.goatcounter }}.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  {{- end -}}
+  
   {{ $css := site.Data.assets.css }}
   {{ $js := site.Data.assets.js }}
 

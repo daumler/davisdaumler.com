@@ -232,14 +232,14 @@
     left: 0;
     top: 60px;
     width: 35%;
-    background-color: rgba(#ddd, 0.50);
+    background-color: rgba(#eee, 0.80);
     // background-color: rgba($sta-dark-menu-text-active, 0.50);
     // color: $sta-dark-menu-text;
     text-align: center !important;
   }
 
   .dark .navbar-collapse {
-    background-color: rgba($sta-menu-text, 0.50);
+    background-color: rgba($sta-menu-text, 0.80);
     // color: $sta-dark-menu-text;
   }
   
@@ -254,11 +254,11 @@
   }
   
   #navbar-main .main-menu-item .nav-item:last-of-type {
-    padding: 6px 7.5px 10px !important;
+    padding: 6px 7.5px 12px !important;
   }
   
   #navbar-main .main-menu-item .nav-item .nav-link:last-of-type {
-    padding: 4px 7.5px 10px !important;
+    padding: 4px 7.5px 12px !important;
   }
 }
 

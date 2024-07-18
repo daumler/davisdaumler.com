@@ -232,7 +232,7 @@
     left: 0;
     top: 60px;
     width: 100%;
-    background-color: $sta-menu-title;
+    background-color: ($sta-menu-title, 0.25);
     text-align: center !important;
   }
 

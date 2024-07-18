@@ -274,8 +274,8 @@ ul.nav-icons li.nav-item a.nav-link {
   // this controls the upper and lower edges
   color: $sta-dark-menu-text !important;
   z-index: 1031 !important; // Appear just over navbar.
-  position: absolute;
-  top: 60px;
+  // position: absolute;
+  // top: 60px;
 }
 
 .dropdown-item {

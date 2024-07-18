@@ -135,7 +135,10 @@ body.dark,
 
 .dark .btn-primary,
 .dark .btn.btn-primary.active {
-  color: initial;
+  // OLD:
+  // color: initial;
+  // NEW:
+  color: $sta-dark-link;
 }
 
 .dark .docs-sidebar .nav > li:not(.active) > a {

@@ -28,7 +28,7 @@
   color: $sta-menu-text !important;
   z-index: 1032; // I18n dropdown over mobile expanded menu.
   // position: absolute;
-  top: 50px;
+  top: 35px;
 }
 
 .navbar {
@@ -36,9 +36,7 @@
   background: $sta-menu-primary;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
   font-size: #{$sta-font-size-small}px;
-
   font-weight: 200;
-
 
   // Remove Bootstrap's navbar v-padding and assign v-padding to logo separately to maximise logo size.
   // Otherwise, Bootstrap's navbar v-padding causes issue with logo fitting within fixed 50px height bar in md-lg sizes.
@@ -234,12 +232,12 @@
     left: 0;
     top: 60px;
     width: 100%;
-    background-color: $sta-menu-primary;
+    background-color: $sta-dark-menu-text-active;
     text-align: center !important;
   }
 
   .dark .navbar-collapse {
-    background-color: $sta-dark-menu-primary;
+    background-color: $sta-menu-text-active;
   }
 
   #navbar-main .main-menu-item .nav-item {
@@ -277,7 +275,7 @@ ul.nav-icons li.nav-item a.nav-link {
   color: $sta-dark-menu-text !important;
   z-index: 1032 !important; // Appear just over navbar.
   // position: absolute;
-  top: 50px;
+  top: 35px;
 }
 
 .dropdown-item {

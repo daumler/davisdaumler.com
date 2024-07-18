@@ -7,8 +7,8 @@
   margin: $margin-y 0;
   overflow: hidden;
   // OLD:
-  // border-top: 1px solid $color;
+  border-top: 1px solid $color;
   // NEW:
-  border-top: 2px solid #DDDDDD;
+  // border-top: 2px solid #DDDDDD;
   @include deprecate("The `nav-divider()` mixin", "v4.4.0", "v5", $ignore-warning);
 }

@@ -4,7 +4,7 @@
 
 .home-section {
   // Use `background` rather than `background-color` so it can support gradients in theme packs.
-  background: $sta-home-section-odd;
+  background: $sta-home-section-odd; // old: background: $sta-home-section-odd;
   position: relative; // Required for component positioning within section.
   padding: 0px 0; // old: padding: 110px 0; ***THIS WAS KEY FIX FOR HOMEPAGE SPACING***
   z-index: 0; // Explicit z-order otherwise `.home-section-bg` can be hidden by any `.home-section` background.
@@ -130,11 +130,11 @@
 }
 
 .dark .home-section {
-  background: $sta-dark-home-section-odd;
+  background: $sta-dark-home-section-odd; // old: background: $sta-dark-home-section-odd;
 }
 
 .dark .home-section:nth-of-type(even) {
-  background: $sta-dark-home-section-even;
+  background: $sta-dark-home-section-even; old: background: $sta-dark-home-section-even;
 }
 
 @media screen and (max-width: 768px) {

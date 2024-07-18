@@ -28,7 +28,7 @@
   color: $sta-menu-text !important;
   z-index: 1032; // I18n dropdown over mobile expanded menu.
   // position: absolute;
-  top: 41px;
+  top: 43px;
 }
 
 .navbar {
@@ -232,13 +232,13 @@
     left: 0;
     top: 60px;
     width: 100%;
-    background-color: rgba($sta-dark-menu-text-active, 0.60);
+    background-color: rgba($sta-dark-menu-text-active, 0.50);
     color: $sta-dark-menu-text;
     text-align: center !important;
   }
 
   .dark .navbar-collapse {
-    background-color: rgba($sta-menu-text, 0.60);
+    background-color: rgba($sta-menu-text, 0.50);
     color: $sta-dark-menu-text;
   }
 
@@ -277,7 +277,7 @@ ul.nav-icons li.nav-item a.nav-link {
   color: $sta-dark-menu-text !important;
   z-index: 1032 !important; // Appear just over navbar.
   // position: absolute;
-  top: 41px;
+  top: 43px;
 }
 
 .dropdown-item {

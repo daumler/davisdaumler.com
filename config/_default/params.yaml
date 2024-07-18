@@ -39,6 +39,7 @@ marketing:
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''
+    plausible: 'davisdaumler.com' # Domain name, if using Plausible Website Analytics
   verification:
     google: ''
     baidu: ''
@@ -52,6 +53,7 @@ header:
     show_logo: true
     show_language: false
     show_day_night: true
+    #     show_theme_chooser: true // [from Hugo's Creator's Blog theme, with Tailwind] 
     show_search: false
     highlight_active_link: true
     # Shop a call-to-action button in the top right?
@@ -110,7 +112,7 @@ features:
       app_id: ''
       api_key: ''
       index_name: ''
-      show_logo: true
+      show_logo: false
   map:
     provider: 'mapnik'
     api_key: ''

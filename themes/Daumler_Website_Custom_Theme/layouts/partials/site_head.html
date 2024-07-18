@@ -35,6 +35,11 @@
   {{ if site.Params.marketing.analytics.google_optimize | and hugo.IsProduction }}
     <script src="https://www.googleoptimize.com/optimize.js?id={{ site.Params.marketing.analytics.google_optimize }}"></script>
   {{- end -}}
+  
+  <!--- ADDING THE OPTION FOR "PLAUSIBLE" WEBSITE ANALYTICS --->
+  {{ if site.Params.marketing.analytics.plausible }}
+    <script defer data-domain="{{ site.Params.marketing.analytics.plausible }}" src="https://plausible.io/js/script.js"></script>
+  {{- end -}}
 
   {{ $css := site.Data.assets.css }}
   {{ $js := site.Data.assets.js }}

@@ -140,6 +140,7 @@ body.dark,
   // NEW:
   color: $sta-dark-background;
   background: $sta-dark-link;
+  // (Note: This fixes the CTA button colors in dark mode.)
 }
 
 .dark .docs-sidebar .nav > li:not(.active) > a {

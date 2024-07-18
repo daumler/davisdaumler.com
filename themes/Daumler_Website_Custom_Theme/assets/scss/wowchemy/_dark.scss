@@ -138,7 +138,8 @@ body.dark,
   // OLD:
   // color: initial;
   // NEW:
-  color: $sta-dark-link;
+  color: $sta-dark-background;
+  background: $sta-dark-link;
 }
 
 .dark .docs-sidebar .nav > li:not(.active) > a {

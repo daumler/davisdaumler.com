@@ -33,3 +33,4 @@ name = "minimal_custom" # Old: Minimal
   # Menu
   menu_primary = "#23252E" # Old: Did not exist as option
   menu_text_active = "#bbdefb" # Old: Did not exist as option
+  menu_new_original_item = "#EE0030" 

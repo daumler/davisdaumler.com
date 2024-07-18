@@ -232,7 +232,7 @@
     left: 0;
     top: 60px;
     width: 33.3%;
-    background-color: rgba(#ddd, 0.50);
+    background-color: rgba(#eee, 0.50);
     // background-color: rgba($sta-dark-menu-text-active, 0.50);
     color: $sta-dark-menu-text;
     text-align: center !important;
@@ -251,6 +251,10 @@
   #navbar-main .main-menu-item .nav-item .nav-link {
     // padding: 5px 15px !important;
     padding: 5px 8px !important;
+  }
+  
+  #navbar-main .main-menu-item .nav-item:last-of-type {
+  padding: 5px 12px !important;
   }
   
   #navbar-main .main-menu-item .nav-item .nav-link:last-of-type {

@@ -232,11 +232,11 @@
     left: 0;
     top: 60px;
     width: 35%;
-    background-color: rgba(#ddd, 0.90);
+    background-color: rgba(#eee, 0.95);
     // background-color: rgba($sta-dark-menu-text-active, 0.50);
     // color: $sta-dark-menu-text;
     text-align: center !important;
-    margin: 50px
+    margin: 0px 5.5px 0px 0px
   }
 
   .dark .navbar-collapse {
@@ -244,22 +244,30 @@
     // color: $sta-dark-menu-text;
   }
   
+  #navbar-main .main-menu-item .nav-item:first-of-type {
+    padding: 12px 2.5px 6px !important;
+  }
+  
+  #navbar-main .main-menu-item .nav-item .nav-link:first-of-type {
+    padding: 12px 2.5px 4px !important;
+  }
+  
   #navbar-main .main-menu-item .nav-item {
     // padding: 10px 15px !important;
-    padding: 6px 7.5px !important;
+    padding: 6px 2.5px !important;
   }
 
   #navbar-main .main-menu-item .nav-item .nav-link {
     // padding: 5px 15px !important;
-    padding: 4px 7.5px !important;
+    padding: 4px 2.5px !important;
   }
   
   #navbar-main .main-menu-item .nav-item:last-of-type {
-    padding: 6px 7.5px 12px !important;
+    padding: 6px 2.5px 12px !important;
   }
   
   #navbar-main .main-menu-item .nav-item .nav-link:last-of-type {
-    padding: 4px 7.5px 12px !important;
+    padding: 4px 2.5px 12px !important;
   }
 }
 

@@ -233,14 +233,14 @@
     top: 50px; 
     width: 100%;
     background-color: $sta-primary; // old: background-color: $sta-menu-primary;
-    color: $sta-dark-menu-text; // old: did not exist
+    // color: $sta-dark-menu-text; // old: did not exist
     text-align: center !important;
   }
 
   .dark .navbar-collapse {
     // background-color: $sta-dark-menu-orig-item; // [failed attempt]
     background-color: $sta-dark-primary; // background-color: $sta-dark-menu-primary;
-    color: $sta-menu-text; // old: did not exist
+    // color: $sta-menu-text; // old: did not exist
   }
 
   #navbar-main .main-menu-item .nav-item {

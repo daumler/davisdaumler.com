@@ -58,7 +58,7 @@ header:
     highlight_active_link: true
     # Shop a call-to-action button in the top right?
     button:
-      enable: true
+      enable: false
       text: "Download CV"
       url: '/CV/'
 

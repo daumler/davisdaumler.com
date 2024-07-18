@@ -25,7 +25,7 @@ $rfs-breakpoint-unit: px !default;
 }
 
 // Resize font size based on screen height and width
-$rfs-two-dimensional: false !default;
+$rfs-two-dimensional: true !default;
 
 // Factor of decrease
 $rfs-factor: 10 !default;

@@ -232,12 +232,12 @@
     left: 0;
     top: 50px;
     width: 100%;
-    background-color: $sta-dark-menu-text-active !important; // old: background-color: $sta-menu-primary;
+    background-color: #eee !important; // old: background-color: $sta-menu-primary;
     text-align: center !important;
   }
 
   .dark .navbar-collapse {
-    background-color: $sta-dark-menu-text-active !important; // old: background-color: $sta-dark-menu-primary;
+    background-color: #eee !important; // old: background-color: $sta-dark-menu-primary;
   }
 
   #navbar-main .main-menu-item .nav-item {

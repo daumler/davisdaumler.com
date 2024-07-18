@@ -271,6 +271,12 @@
   }
 }
 
+@include media-breakpoint-down(sm) {
+  .navbar-collapse {
+    width: 40%;
+  }
+}
+
 ul.nav-icons {
   list-style-type: none;
   font-size: 18px;

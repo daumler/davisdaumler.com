@@ -271,7 +271,7 @@
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xs) {
   .navbar-collapse {
     width: 40%;
   }

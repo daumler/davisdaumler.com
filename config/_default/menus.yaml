@@ -5,7 +5,7 @@
 
 main:
   - name: Home
-    url: ''
+    url: '#'
     weight: 100
   - name: CV
     url: 'https://davisdaumler.com/CV/'

@@ -232,12 +232,14 @@
     left: 0;
     top: 60px;
     width: 100%;
-    background-color: rgba($sta-menu-title, 0.25);
+    background-color: rgba($sta-menu-text-active, 0.50);
+    color: $sta-dark-menu-text;
     text-align: center !important;
   }
 
   .dark .navbar-collapse {
-    background-color: $sta-menu-text;
+    background-color: rgba($sta-menu-text, 0.50);
+    color: $sta-dark-menu-text;
   }
 
   #navbar-main .main-menu-item .nav-item {

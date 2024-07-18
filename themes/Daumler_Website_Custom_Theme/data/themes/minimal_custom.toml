@@ -8,8 +8,8 @@ name = "minimal_custom" # Old: Minimal
   # Menu
   menu_primary = "#fff" # Old: fff, then 00274C
   menu_text = "#34495e" # Old: 34495e, then fff
-  menu_text_active = "#2962ff" # Old: 2962ff, then bbdefb
-  menu_title = "#2b2b2b" # Old: 2b2b2b, then fff
+  menu_text_active = "#00274C" # Old: 2962ff, then 00274C, then bbdefb
+  menu_title = "#00274C" # Old: 2b2b2b, then fff
   # menu_orig_item = "#EE0030"
   
   # Home sections
@@ -35,5 +35,5 @@ name = "minimal_custom" # Old: Minimal
   menu_primary = "#23252E" # Old: Did not exist as option; then #23252E, then ddd
   men_text = "#000" # Old: Did not exist as option, then 000
   menu_text_active = "#bbdefb" # Old: Did not exist as option; then bbdefb, then 00274C
-  menu_title = "#000" # Old: Did not exist as option, then 000
+  menu_title = "#fff" # Old: Did not exist as option, then fff, then 000
   # menu_orig_item = "#EE0030"

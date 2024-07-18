@@ -21,7 +21,9 @@ $navbar-light-brand-color: $sta-menu-title;
 $navbar-light-brand-hover-color: $navbar-light-active-color;
 // OLD:
 // $navbar-light-toggler-border-color: transparent;
+// NEW:
 $navbar-light-toggler-border-color: $sta-menu-title;
+$navbar-dark-toggler-border-color: #eee;
 
 // Larger than default 20px slider prev/next arrows
 // Currently, also requires changing left/right margin offsets in slider.html

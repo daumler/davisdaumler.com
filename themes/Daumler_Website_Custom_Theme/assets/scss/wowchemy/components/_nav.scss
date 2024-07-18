@@ -270,17 +270,16 @@ ul.nav-icons li.nav-item a.nav-link {
 }
 
 .dark .dropdown-menu {
-  background-color: $sta-dark-menu-text-active !important;
-  // background-color: $sta-dark-menu-primary !important;
+  background-color: $sta-dark-menu-primary !important;
   color: $sta-dark-menu-text !important;
 }
 
 .dropdown-item {
-  background-color: $sta-menu-primary !important;
+  background-color: $sta-dark-menu-text-active !important; // old: $sta-menu-primary
   color: $sta-menu-text !important;
 }
 
 .dark .dropdown-item {
-  background-color: $sta-dark-menu-primary !important;
+  background-color: $sta-dark-menu-text-active !important; // old: $sta-dark-menu-primary
   color: $sta-dark-menu-text !important;
 }

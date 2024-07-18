@@ -45,8 +45,8 @@ $sta-home-section-even: {{ $scr.Get "home_section_even" }};
 $sta-dark-home-section-odd: {{ $scr.Get "dark_home_section_odd" }};
 $sta-dark-home-section-even: {{ $scr.Get "dark_home_section_even" }};
 
-$sta-menu-orig-item: {{ $scr.Get "menu_orig_item" }}
-$sta-dark-menu-orig-item: {{ $scr.Get "dark_menu_orig_item" }}
+// $sta-menu-orig-item: {{ $scr.Get "menu_orig_item" }}
+// $sta-dark-menu-orig-item: {{ $scr.Get "dark_menu_orig_item" }}
 
 @import "bootstrap_variables";
 @import "_vendor/bootstrap/bootstrap";

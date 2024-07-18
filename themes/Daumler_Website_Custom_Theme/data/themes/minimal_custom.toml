@@ -10,7 +10,7 @@ name = "minimal_custom" # Old: Minimal
   menu_text = "#34495e" # Old: 34495e
   menu_text_active = "#1259a9" # Old: 2962ff
   menu_title = "#2b2b2b" # Old: 2b2b2b
-  menu_orig_item = "#EE0030"
+  # menu_orig_item = "#EE0030"
   
   # Home sections
   home_section_odd = "rgb(255, 255, 255)" # Old: rgb(255, 255, 255)
@@ -34,4 +34,4 @@ name = "minimal_custom" # Old: Minimal
   # Menu
   menu_primary = "#23252E" # Old: Did not exist as option
   menu_text_active = "#bbdefb" # Old: Did not exist as option
-  menu_orig_item = "#EE0030"
+  # menu_orig_item = "#EE0030"

@@ -60,11 +60,17 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
+Hi, I am a sociologist who studies wealth, poverty, and families. My research advances our understanding of how the social and economic dynamics of American families accumulate into generational inequalities.
+
+I am currently working on two broader projects. The first investigates how the timing of childhood poverty contributes to intergenerational inequalities. And the second explores the process by which families accumulate wealth and the larger shift in society’s reliance on household finances as a private safety net.
+
+{{< cta cta_text="DOWNLOAD CV" cta_link="/CV/" cta_new_tab="true" >}}
+<!--- Commenting out ---
+# OLD BIO:
 Hi, I am a sociologist who studies wealth, poverty, and families—in order to understand the process by which societies become socially and economically stratified. My research advances our understanding of how the dynamics of American families accumulate into generational inequalities.
 
 I am currently working on two broader projects. The first investigates how the timing of childhood poverty contributes to intergenerational inequalities. And the second explores the process by which families accumulate wealth and the larger shift in society’s reliance on household finances as a de facto safety net.
-
-{{< cta cta_text="DOWNLOAD CV" cta_link="/CV/" cta_new_tab="true" >}}
+--- Commenting out --->
 <!--- Commenting out ---
 
 # Skills

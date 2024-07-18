@@ -9,7 +9,7 @@ name = "minimal_custom" # Old: Minimal
   menu_primary = "#fff" # Old: fff, then 00274C
   menu_text = "#34495e" # Old: 34495e, then fff
   menu_text_active = "#00274C" # Old: 2962ff, then 00274C, then bbdefb
-  menu_title = "#00274C" # Old: 2b2b2b, then fff
+  menu_title = "#34495e" # Old: 2b2b2b, then fff, then 00274C
   # menu_orig_item = "#EE0030"
   
   # Home sections

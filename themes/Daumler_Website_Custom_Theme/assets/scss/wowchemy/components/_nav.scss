@@ -169,8 +169,7 @@
   // Set v-padding to 5px to align with 50/70px responsive max navbar heights.
   padding-top: 5px;
   padding-bottom: 5px;
-  // font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: bold;
   position: relative;
   z-index: 1030; // For z-index clickable mobile logo.
 }
@@ -214,7 +213,7 @@
   }
 
   .navbar-brand img {
-    max-height: 50px; // 40px height + 10px v-padding = 50px. // Used to be 50
+    max-height: 40px; // 40px height + 10px v-padding = 50px.
   }
 
   .navbar-toggler {
@@ -230,17 +229,14 @@
     z-index: 1031 !important; // Appear just over navbar.
     position: absolute;
     left: 0;
-    top: 50px; 
+    top: 50px;
     width: 100%;
-    background-color: $sta-dark-primary; // old: background-color: $sta-menu-primary;
-    // color: $sta-dark-menu-text; // old: did not exist
+    background-color: $sta-menu-primary;
     text-align: center !important;
   }
 
   .dark .navbar-collapse {
-    // background-color: $sta-dark-menu-orig-item; // [failed attempt]
-    background-color: $sta-dark-primary; // background-color: $sta-dark-menu-primary;
-    // color: $sta-menu-text; // old: did not exist
+    background-color: $sta-dark-menu-primary;
   }
 
   #navbar-main .main-menu-item .nav-item {

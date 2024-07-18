@@ -283,9 +283,11 @@ ul.nav-icons li.nav-item a.nav-link {
 .dropdown-item {
   background-color: $sta-menu-primary !important; // old: $sta-menu-primary
   color: $sta-menu-text !important;
+  text-align: right !important;
 }
 
 .dark .dropdown-item {
   background-color: $sta-dark-menu-primary !important; // old: $sta-dark-menu-primary
   color: $sta-dark-menu-text !important;
+  text-align: right !important;
 }

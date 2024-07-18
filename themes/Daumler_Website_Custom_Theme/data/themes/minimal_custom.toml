@@ -14,10 +14,17 @@ name = "minimal_custom" # Old: Minimal
   # Home sections
   home_section_odd = "rgb(255, 255, 255)" # Old: rgb(255, 255, 255)
   home_section_even = "rgb(247, 247, 247)" # Old: rgb(247, 247, 247)
+  
+  # Links
+  link_hover = "#00274C" # Old: Did not exist as option
 
 [dark]
   # Primary
   primary = "#bbdefb" # Old: bbdefb
-
+  
+  # Links
   link = "#bbdefb" # bbdefb
   link_hover = "#bbdefb" # Old: bbdefb
+  
+  # Menu
+  menu_text_active = "#bbdefb" # Old: Did not exist as option

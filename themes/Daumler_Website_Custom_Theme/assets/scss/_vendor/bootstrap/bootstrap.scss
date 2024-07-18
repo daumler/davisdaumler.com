@@ -41,9 +41,4 @@
 @import "carousel";
 @import "spinners";
 @import "utilities";
-
-"font-size": map-merge(map-get($utilities, "font-size"),
-(responsive: true),
-),
-
 @import "print";

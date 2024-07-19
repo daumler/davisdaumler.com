@@ -44,6 +44,12 @@
 
   <!--- ADDING THE OPTION FOR "GOAT COUNTER" WEBSITE ANALYTICS --->
   {{ if site.Params.marketing.analytics.goatcounter }}
+  <script>
+    // Make sure this is *before* you load the count.js script; otherwise
+    // the pageview may get sent before this is loaded and this will just
+    // overwrite the object.
+    window.goatcounter = {allow_local: true}
+  </script>
   <script data-goatcounter="https://{{ site.Params.marketing.analytics.goatcounter }}.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   {{- end -}}

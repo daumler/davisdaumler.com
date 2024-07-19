@@ -32,20 +32,27 @@
     {{ end }}
   {{ end }}
 
+  
   {{ if site.Params.marketing.analytics.google_optimize | and hugo.IsProduction }}
     <script src="https://www.googleoptimize.com/optimize.js?id={{ site.Params.marketing.analytics.google_optimize }}"></script>
   {{- end -}}
-  
+
   <!--- ADDING THE OPTION FOR "PLAUSIBLE" WEBSITE ANALYTICS --->
   {{ if site.Params.marketing.analytics.plausible }}
     <script defer data-domain="{{ site.Params.marketing.analytics.plausible }}" src="https://plausible.io/js/script.js"></script>
   {{- end -}}
-  
+
   <!--- ADDING THE OPTION FOR "GOAT COUNTER" WEBSITE ANALYTICS --->
   {{ if site.Params.marketing.analytics.goatcounter }}
   <script data-goatcounter="https://{{ site.Params.marketing.analytics.goatcounter }}.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   {{- end -}}
+
+  <!--- ADDING THE OPTION FOR "LITE ANALYTICS" WEBSITE ANALYTICS --->
+  {{ if site.Params.marketing.analytics.liteanalytics }}
+  <script defer async data-host="{{ site.Params.marketing.analytics.liteanalytics }" src="https://liteanalytics.com/lite.js"></script>
+  {{- end -}}
+  
   
   {{ $css := site.Data.assets.css }}
   {{ $js := site.Data.assets.js }}

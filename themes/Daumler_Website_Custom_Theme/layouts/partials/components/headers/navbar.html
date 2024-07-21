@@ -110,7 +110,7 @@
           {{end}}
 
           <li class="nav-item">
-            <a class="nav-link {{if and $highlight_active_link $is_link_in_current_path }} active{{end}}" href="{{.URL | relLangURL}}" {{ if eq .Name "CV" }}data-goatcounter-click="ext-navbar-cv" data-goatcounter-title="navbar/CV" data-goatcounter-referrer="local"{{ end }}{{ if eq .Name "PSID-SHELF" }}data-goatcounter-click="ext-navbar-psid-shelf" data-goatcounter-title="navbar/PSID-SHELF" data-goatcounter-referrer="local"{{ end }}{{ if and $is_widget_page $is_same_page }} data-target="{{$hash}}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
+            <a class="nav-link {{if and $highlight_active_link $is_link_in_current_path }} active{{end}}" href="{{.URL | relLangURL}}" {{ if eq .Name "CV" }}data-goatcounter-click="ext-navbar-cv" data-goatcounter-title="navbar/CV" data-goatcounter-referrer="{{ $current_page.Permalink }}"{{ end }}{{ if eq .Name "PSID-SHELF" }}data-goatcounter-click="ext-navbar-psid-shelf" data-goatcounter-title="navbar/PSID-SHELF" data-goatcounter-referrer="{{ $current_page.Permalink }}"{{ end }}{{ if and $is_widget_page $is_same_page }} data-target="{{$hash}}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
               {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
             </a>
           </li>
@@ -134,7 +134,7 @@
           {{ end }}
 
           <li class="nav-item">
-            <a class="nav-link" href="{{ .URL | relLangURL }}" {{ if eq .Name "CV" }}data-goatcounter-click="ext-navbar-cv" data-goatcounter-title="navbar/CV" data-goatcounter-referrer="local"{{ end }}{{ if eq .Name "PSID-SHELF" }}data-goatcounter-click="ext-navbar-psid-shelf" data-goatcounter-title="navbar/PSID-SHELF" data-goatcounter-referrer="local"{{ end }}{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
+            <a class="nav-link" href="{{ .URL | relLangURL }}" {{ if eq .Name "CV" }}data-goatcounter-click="ext-navbar-cv" data-goatcounter-title="navbar/CV" data-goatcounter-referrer="{{ $current_page.Permalink }}"{{ end }}{{ if eq .Name "PSID-SHELF" }}data-goatcounter-click="ext-navbar-psid-shelf" data-goatcounter-title="navbar/PSID-SHELF" data-goatcounter-referrer="{{ $current_page.Permalink }}"{{ end }}{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
               {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
             </a>
           </li>
@@ -150,7 +150,7 @@
           {{ range where .Params.social ".display.header" true }}
             {{ $social_link := partial "functions/get_social_link" . }}
             <li class="nav-item d-none d-lg-inline-flex">
-              <a class="nav-link" href="{{ $social_link.link | safeURL }}" {{ if eq $social_link.aria_label "twitter" }}data-goatcounter-click="ext-navbar-twitter" data-goatcounter-title="navbar/Twitter" data-goatcounter-referrer="local"{{ end }}{{ with $social_link.tooltip }} data-toggle="tooltip" data-placement="bottom" title="{{.}}"{{ end }} {{ $social_link.target | safeHTMLAttr }} aria-label="{{ $social_link.aria_label }}">
+              <a class="nav-link" href="{{ $social_link.link | safeURL }}" {{ if eq $social_link.aria_label "twitter" }}data-goatcounter-click="ext-navbar-twitter" data-goatcounter-title="navbar/Twitter" data-goatcounter-referrer="{{ $current_page.Permalink }}"{{ end }}{{ with $social_link.tooltip }} data-toggle="tooltip" data-placement="bottom" title="{{.}}"{{ end }} {{ $social_link.target | safeHTMLAttr }} aria-label="{{ $social_link.aria_label }}">
                 <i class="{{ $social_link.icon_pack }} {{ $social_link.pack_prefix }}-{{ $social_link.icon }}" aria-hidden="true"></i>
               </a>
             </li>

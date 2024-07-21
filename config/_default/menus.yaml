@@ -8,7 +8,7 @@ main:
     url: ''
     weight: 100
   - name: CV
-    url: 'https://davisdaumler.com/CV/'
+    url: 'https://davisdaumler.com/Daumler_CV/'
     weight: 200
 #  - name: Research
 #    url: '/project/'
@@ -30,7 +30,7 @@ main:
   - name: PSID-SHELF
 #    parent: Resources
     url: 'https://www.openicpsr.org/openicpsr/project/194322'
-    weight: 420
+    weight: 600
 #  - name: About Me
 #    url: '/post/'
 #    weight: 800

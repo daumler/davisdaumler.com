@@ -19,8 +19,7 @@
 
 <ul class="cta-group">
   {{ if (.Get "cta_text") }}
-  {{ $currenturl := .Page.Permalink }}
-  {{ if (eq $currenturl "") }}
+  {{ if (.Page.Permalink === null) }}
     {{ $currenturl := "davisdaumler.com/" }} 
   {{ end }}
   <li>
@@ -28,8 +27,7 @@
   </li>
   {{ end }}
   {{ if (.Get "cta_alt_text") }}
-  {{ $currenturl := .Page.Permalink }}
-  {{ if (eq $currenturl "") }}
+  {{ if (.Page.Permalink === null) }}
     {{ $currenturl := "davisdaumler.com/" }} 
   {{ end }}
   <li>

@@ -21,7 +21,7 @@
   {{ if (.Get "cta_text") }}
   {{ $currenturl := .Page.Permalink }}
   {{ if (or (eq $currenturl "/") (eq $currenturl "") (eq $currenturl " ")) }}
-    {{ $currenturl := site.Home.Permalink }} 
+    {{ $currenturl := "davisdaumler.com" }} 
   {{ end }}
   <li>
     <a href="{{.Get "cta_link"}}" {{ if eq (.Get "cta_text") "DOWNLOAD CV" }}data-goatcounter-click="ext-button-cv" data-goatcounter-title="button/CV" data-goatcounter-referrer="{{ $currenturl }}"{{ end }}{{ if eq (.Get "cta_text") "PSID-SHELF" }}data-goatcounter-click="ext-button-psid-shelf" data-goatcounter-title="button/PSID-SHELF" data-goatcounter-referrer="{{ $currenturl }}"{{ end }}{{if eq (.Get "cta_new_tab") "true" }} target="_blank" rel="noopener"{{end}} class="btn btn-primary px-3 py-3">{{ (.Get "cta_text") | markdownify | emojify }}</a>
@@ -30,7 +30,7 @@
   {{ if (.Get "cta_alt_text") }}
   {{ $currenturl := .Page.Permalink }}
   {{ if (or (eq $currenturl "/") (eq $currenturl "") (eq $currenturl " ")) }}
-    {{ $currenturl := site.Home.Permalink }} 
+    {{ $currenturl := "davisdaumler.com" }} 
   {{ end }}
   <li>
     <a href="{{.Get "cta_alt_link"}}" {{ if eq (.Get "cta_alt_text") "DOWNLOAD CV" }}data-goatcounter-click="ext-button-cv" data-goatcounter-title="button/CV" data-goatcounter-referrer="{{ $currenturl }}"{{ end }}{{ if eq (.Get "cta_alt_text") "PSID-SHELF" }}data-goatcounter-click="ext-button-psid-shelf" data-goatcounter-title="button/PSID-SHELF" data-goatcounter-referrer="{{ $currenturl }}"{{ end }}{{if eq (.Get "cta_alt_new_tab") "true" }} target="_blank" rel="noopener"{{end}}>

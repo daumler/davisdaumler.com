@@ -19,7 +19,8 @@
 
 <ul class="cta-group">
   {{ if (.Get "cta_text") }}
-  {{ with "davisdaumler.com" }}
+  {{ $var := "davisdaumler.com" }}
+  {{ with $var }}
     {{ $.Page.RelPermalink }}
   {{ end }}
   <li>
@@ -27,7 +28,8 @@
   </li>
   {{ end }}
   {{ if (.Get "cta_alt_text") }}
-  {{ with "davisdaumler.com" }}
+  {{ $var := "davisdaumler.com" }}
+  {{ with $var }}
     {{ $.Page.RelPermalink }}
   {{ end }}
   <li>

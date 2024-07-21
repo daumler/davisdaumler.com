@@ -21,7 +21,7 @@
   {{ if (.Get "cta_text") }}
   {{ $currenturl := .Page.RelPermalink }}
   {{ with $currenturl }}
-    {{ davisdaumler.com/ }}
+    {{ "davisdaumler.com/" }}
   {{ else }}
     {{ $currenturl := "davisdaumler.com/" }}
   {{ end }}
@@ -32,7 +32,7 @@
   {{ if (.Get "cta_alt_text") }}
   {{ $currenturl := .Page.RelPermalink }}
   {{ with $currenturl }}
-    {{ davisdaumler.com/ }}
+    {{ "davisdaumler.com/" }}
   {{ else }}
     {{ $currenturl := "davisdaumler.com/" }}
   {{ end }}

@@ -20,7 +20,7 @@
 <ul class="cta-group">
   {{ if (.Get "cta_text") }}
   {{ $currenturl := .Page.Permalink }}
-  {{ if .IsHome }}
+  {{ if eq (relURL .URL) ("/" | safeHTML) }}
   {{ $currenturl := site.Home.Permalink }
   {{ end }}
   <li>
@@ -28,7 +28,7 @@
   </li>
   {{ end }}
   {{ $currenturl := .Page.Permalink }}
-  {{ if .IsHome }}
+  {{ if eq (relURL .URL) ("/" | safeHTML) }}
   {{ $currenturl := site.Home.Permalink }
   {{ end }}
   <li>

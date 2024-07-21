@@ -81,8 +81,10 @@
         {{ else if in (slice "http" "https") $scheme }}
           {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
         {{ end }}
+        {{ $currenturl := .Page.RelPermalink }}
+        {{ $currenturl := .Site.BaseURL }}
         <li>
-          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
+          <a href="{{ $link | safeURL }}" {{ if eq .icon "twitter" }}data-goatcounter-click="ext-home-icon-twitter" data-goatcounter-title="home-icon/Twitter" data-goatcounter-referrer="{{ absURL "/" }}"{{ end }}{{ if eq .icon "graduation-cap" }}data-goatcounter-click="ext-home-icon-google-scholar" data-goatcounter-title="home-icon/Google-Scholar" data-goatcounter-referrer="{{ absURL "/" }}"{{ end }}{{ if eq .icon "google-scholar" }}data-goatcounter-click="ext-home-icon-google-scholar" data-goatcounter-title="home-icon/Google-Scholar" data-goatcounter-referrer="{{ absURL "/" }}"{{ end }}{{ if eq .icon "github" }}data-goatcounter-click="ext-home-icon-github" data-goatcounter-title="home-icon/GitHub" data-goatcounter-referrer="{{ absURL "/" }}"{{ end }}{{ if eq .icon "orcid" }}data-goatcounter-click="ext-home-icon-orcid" data-goatcounter-title="home-icon/ORCID" data-goatcounter-referrer="{{ absURL "/" }}"{{ end }}{{ if eq .icon "university" }}data-goatcounter-click="ext-home-icon-institutional-page" data-goatcounter-title="home-icon/Institutional-page" data-goatcounter-referrer="{{ absURL "/" }}"{{ end }} {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
             <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
           </a>
         </li>

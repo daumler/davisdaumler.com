@@ -19,7 +19,7 @@
 
 <ul class="cta-group">
   {{ if (.Get "cta_text") }}
-  {{ $currenturl := .Get .URL }}
+  {{ $currenturl := .URL }}
   {{ if (or (eq $currenturl "/") (eq $currenturl "")) }}
     {{ $currenturl := "davisdaumler.com" }} 
   {{ end }}
@@ -28,7 +28,7 @@
   </li>
   {{ end }}
   {{ if (.Get "cta_alt_text") }}
-  {{ $currenturl := .Get .URL }}
+  {{ $currenturl := .URL }}
   {{ if (or (eq $currenturl "/") (eq $currenturl "")) }}
     {{ $currenturl := "davisdaumler.com" }} 
   {{ end }}

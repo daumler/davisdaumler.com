@@ -65,8 +65,8 @@ highlight_name: true
 
 Hi, I am a sociologist who studies wealth, poverty, and families---in order to understand how societies become economically and racially stratified.
 
-In my dissertation, I investigate large and meaningful questions about how the temporal dynamics of families accumulate into generational inequalities. This project consists of two lines of research. First, I study the life-course dynamics of childhood poverty. Second, I study the historical dynamics of family wealth accumulation.
+In my dissertation, I investigate large and meaningful questions about how the temporality of life experiences contributes to new and existing forms of social stratification. This project consists of two lines of research. First, I study the life-course dynamics of childhood poverty. Second, I study the historical dynamics of family wealth accumulation.
 
-Taken together, my work generates sociological explanations for how the temporality of life experiences contributes to new and existing forms of social stratification.
+Taken together, my work generates sociological explanations for how the temporal dynamics of families accumulate into generational inequalities.
 
 {{< cta cta_text="DOWNLOAD CV" cta_link="/Daumler_CV/" cta_new_tab="true" >}}

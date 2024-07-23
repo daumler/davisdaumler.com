@@ -14,12 +14,13 @@ $text-muted: rgba(0, 0, 0, 0.54);
 //   xl: 1290px,
 // );
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
+  sm: 576px,
+  md: 768px,
+  lg: 928px, // 992 > 928
   // wider default: 1140 -> 1290
   xl: 1290px, // Used to be: 1290px, then 1140px
 );
+
 $navbar-toggler-padding-x: 0;
 $navbar-toggler-font-size: 18px;
 $navbar-brand-font-size: 1.2rem;

@@ -206,8 +206,8 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px 
+  lg: 928px, // 992 > 928
+  xl: 1290px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -218,7 +218,7 @@ $grid-breakpoints: (
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-// OLD:offset-rotate: 
+// OLD:offset-rotate:
 // $container-max-widths: (
 //  sm: 540px,
 //  md: 720px,
@@ -227,9 +227,9 @@ $grid-breakpoints: (
 // ) !default;
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
+  sm: 576px,
+  md: 768px,
+  lg: 928px, // 960 > 992 > 928
   xl: 1290px // originally 1140px, then 1290px
 ) !default;
 
@@ -996,7 +996,7 @@ $modal-header-padding:              $modal-header-padding-y $modal-header-paddin
 // $modal-md:                          500px !default;
 // $modal-sm:                          300px !default;
 
-$modal-xl:                          980px !default;
+$modal-xl:                          1140px !default;  // OLD: 980px
 $modal-lg:                          800px !default;
 $modal-md:                          500px !default;
 $modal-sm:                          320px !default;

@@ -62,8 +62,10 @@ highlight_name: true
 ---
 <!--- NOTE: This site uses GoatCounter, an open-source, not-for-profit web analytics platform that does not track personal data or use any cookies. GoatCounter is a donation-supported and privacy-friendly alternative to Google Analytics or Matomo, intended for noncommercial or small-business websites. More information on the philosophy and mechanics of GoatCounter can be found here (<< https://www.goatcounter.com/why >>), and an open-source repository for the platform can be found here (<< https://github.com/arp242/goatcounter >>). --->
 
-Hi, I am a sociologist who studies wealth, poverty, and families. My research advances our understanding of how the social and economic dynamics of American families accumulate into generational inequalities.
+Hi, I am a sociologist who studies wealth, poverty, and families---in order to understand how societies become economically and racially stratified.
 
-I am currently working on two broader projects. The first investigates how the timing of childhood poverty contributes to intergenerational inequalities. And the second explores the process by which families accumulate wealth and the larger shift in society’s reliance on household finances as a private safety net.
+In my dissertation, I investigate large and meaningful questions about how the dynamics of American families accumulate into generational inequalities. This project comprises two related lines of inquiry. 
+
+In my research on the timing of childhood poverty, I generate explanations for how life-course dynamics can reinforce population-level inequalities. In my research on the accumulation of private wealth, I advance our understanding of how shifting historical dynamics contribute to inequalities among everyday American families.
 
 {{< cta cta_text="DOWNLOAD CV" cta_link="/Daumler_CV/" cta_new_tab="true" >}}

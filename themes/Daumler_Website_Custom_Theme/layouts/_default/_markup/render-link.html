@@ -1,2 +1,0 @@
-{{- /* A Hugo Markdown render hook to parse links, opening external links in new tabs. */ -}}
-<a href="{{ .Destination | safeURL }}" data-goatcounter-click="ext-{{ .Destination | safeURL }}" data-goatcounter-referrer="{{ $title := .Title }}" {{ with .Title}} title="{{ . }}" data-goatcounter-title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>

@@ -39,9 +39,9 @@ marketing:
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''
-    plausible: 'davisdaumler.com' # Domain name, if using Plausible Website Analytics
     goatcounter: 'dd5' # Host name, if using Goat Counter Website Analytics
     liteanalytics: 'davisdaumler.com' # Domain name, if using Lite Analytics
+    plausible: '' # Domain name, if using Plausible Website Analytics
   verification:
     google: ''
     baidu: ''

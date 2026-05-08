@@ -37,7 +37,7 @@ social:
     link: https://twitter.com/DavisDaumler
     label: 
     display:
-      header: true
+      header: false
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com/citations?user=lTp9f0kAAAAJ

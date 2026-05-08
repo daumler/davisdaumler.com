@@ -17,11 +17,11 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Sociologist and PhD Candidate
+role: Sociologist and Postdoctoral Research Fellow
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: University of Michigan
+  - name: Harvard University
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
@@ -52,7 +52,7 @@ social:
     label: Make sure I'm legit with ORCID
   - icon: university
     icon_pack: fa
-    link: https://lsa.umich.edu/soc/people/current-graduate-students/davis-daumler.html
+    link: https://inequality.hks.harvard.edu/people/davis-daumler
     label: Go visit my institutional profile
 
 # Follow me on Twitter
@@ -63,10 +63,14 @@ highlight_name: true
 <!--- 
 <!--- NOTE: This site uses GoatCounter, an open-source, not-for-profit web analytics platform that does not track personal data or use any cookies. GoatCounter is a donation-supported and privacy-friendly alternative to Google Analytics or Matomo, intended for noncommercial or small-business websites. More information on the philosophy and mechanics of GoatCounter can be found here (<< https://www.goatcounter.com/why >>), and an open-source repository for the platform can be found here (<< https://github.com/arp242/goatcounter >>). --->
 
-Hi, I am a sociologist who studies wealth, poverty, and families---in order to understand how societies become economically and racially stratified.
+Hi, I am a sociologist who studies wealth, poverty, and families---in order to understand how societies become economically and racially stratified. 
 
-In my dissertation, I investigate large and meaningful questions about how the temporality of life experiences contributes to new and existing forms of social stratification. This project consists of two lines of research. First, I study the life-course dynamics of childhood poverty. Second, I study the historical dynamics of family wealth accumulation.
+Since September 2025, I have held an appointment as the Stone Program Postdoctoral Fellow at Harvard University. Prior to joining the <a href="https://inequality.hks.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard Stone Program</a>, I received my Ph.D. in Sociology from the University of Michigan. 
 
-Taken together, my work generates sociological explanations for how the temporal dynamics of families accumulate into generational inequalities.
+My research advances our understanding of how population-level inequalities are shaped by different aspects of temporal dynamics, including life-course timing and shifting historical contexts. It is not just *what* happens to you that matters, but *when* something occurs and *how long* it lasts. Each paper of my dissertation addresses a different facet of this theoretical argument, by investigating the role of temporal dynamics in the contexts of intergenerational poverty and family wealth accumulation. The first chapter of my dissertation won the 2023 Robert D. Mare Graduate Student Paper Award from the <a href="https://www.asanet.org/communities-and-sections/sections/current-sections/inequality-poverty-and-mobility-award-recipient-history/" target="_blank" rel="noopener noreferrer">ASA Section on Inequality, Poverty, and Mobility</a>.
+
+My postdoctoral research builds upon these insights by examining how changes to the political economy of wealth have affected the economic foundation of families. Drawing on a unique combination of institutional and demographic theories, my research investigates a key pathway by which government policies directly affect the wealth of American families---and maintain systems of racialized wealth inequality. 
+
+**I will be on the academic job market in August 2026.** If you have any questions, or if you would like to chat, please reach out to me!
 
 {{< cta cta_text="DOWNLOAD CV" cta_link="/Daumler_CV/" cta_new_tab="true" >}}
